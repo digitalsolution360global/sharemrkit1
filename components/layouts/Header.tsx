@@ -108,10 +108,11 @@ export default function Header() {
             </Link>
 
             {/* HAMBURGER – Mobile */}
-            <button
-              onClick={() => setMenuOpen(!menuOpen)}
-              className="md:hidden text-white"
+           <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="md:hidden text-black"
             >
+
               {menuOpen ? <X size={26} /> : <Menu size={26} />}
             </button>
           </div>
