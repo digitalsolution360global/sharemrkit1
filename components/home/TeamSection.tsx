@@ -1,17 +1,20 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 const teamMembers = [
   {
     name: "Ashish Singh",
     role: "Co-founder & Faculty",
     img: "/ashish.png",
+    slug: "ashish-singh",
   },
   {
     name: "Nikhil Singh",
     role: "Co-founder & Faculty",
     img: "/nikhil.png",
+    slug: "nikhil-singh",
   },
 ];
 
@@ -34,31 +37,38 @@ export default function TeamSection() {
         {/* Team Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {teamMembers.map((member, index) => (
-            <div
+            <Link
               key={index}
-              className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl shadow-xl hover:shadow-green-500/20 transition duration-300 overflow-hidden"
+              href={`/team/${member.slug}`}
+              className="group"
             >
-              {/* Image - FULL visible */}
-              <div className="relative w-full h-80 bg-white">
-                <Image
-                  src={member.img}
-                  alt={member.name}
-                  fill
-                  className="object-contain "
-                  priority
-                />
-              </div>
+              <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl shadow-xl hover:shadow-green-500/30 transition duration-300 overflow-hidden">
+                
+                {/* Image */}
+                <div className="relative w-full h-80 bg-white">
+                  <Image
+                    src={member.img}
+                    alt={member.name}
+                    fill
+                    className="object-contain group-hover:scale-105 transition"
+                  />
+                </div>
 
-              {/* Content */}
-              <div className="p-8 text-center">
-                <h3 className="text-2xl font-bold text-white">
-                  {member.name}
-                </h3>
-                <p className="text-green-400 font-medium mt-2">
-                  {member.role}
-                </p>
+                {/* Content */}
+                <div className="p-8 text-center">
+                  <h3 className="text-2xl font-bold text-white">
+                    {member.name}
+                  </h3>
+                  <p className="text-green-400 font-medium mt-2">
+                    {member.role}
+                  </p>
+
+                  <p className="text-gray-400 mt-4 text-sm group-hover:text-green-400 transition">
+                    View Profile →
+                  </p>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
