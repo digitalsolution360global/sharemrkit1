@@ -46,7 +46,7 @@ export default function ExperienceSection() {
         <div className="absolute inset-0 bg-black/70"></div> {/* overlay */}
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-6 py-28 text-center">
+      <div className="relative max-w-7xl mx-auto px-6 py-28 md:text-center">
         {/* Heading */}
         <h2 className="text-4xl md:text-5xl font-extrabold mb-4">
           Experiences Fueled by Passion and Expertise

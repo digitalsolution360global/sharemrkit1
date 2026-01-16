@@ -1,3 +1,6 @@
+"use client";
+
+import dynamic from "next/dynamic";
 import Banner from "@/components/home/Banner";
 import CourseSearchBar from "@/components/home/CourseSearchBar";
 import IntroSection from "@/components/home/IntroSection";
@@ -10,22 +13,25 @@ import TeamSection from "@/components/home/TeamSection";
 import TestimonialsSection from "@/components/home/TestimonialsSection";
 import FAQSection from "@/components/home/FAQSection";
 
+// Dynamically import ScrollVideoSection to disable SSR
+const ScrollVideoSection = dynamic(
+  () => import("@/components/home/ScrollVideoSection"),
+  { ssr: false }
+);
 
 export default function HomePage() {
   return (
     <>
-   
-
-      {/* Hero Banner */}
       <Banner />
       <CourseSearchBar />
-      <IntroSection/>
+      <IntroSection />
       <ServicesSection />
       <AboutFioncaSection />
       <BenefitsSection />
       <ExperienceSection />
       <BlogSection />
       <TeamSection />
+      <ScrollVideoSection />
       <TestimonialsSection />
       <FAQSection />
     </>

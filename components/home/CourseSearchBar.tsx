@@ -17,7 +17,7 @@ export default function CourseSearchBar() {
 
             {/* LEFT TEXT */}
             <div className="text-white font-semibold text-lg whitespace-nowrap">
-              Find your course
+              Talk To Our Expert
             </div>
 
             {/* SEARCH */}
@@ -81,7 +81,7 @@ export default function CourseSearchBar() {
                 whitespace-nowrap
               "
             >
-              Find Course
+              Talk To Our Expert
             </button>
 
           </div>
