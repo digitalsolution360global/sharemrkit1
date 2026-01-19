@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Phone, MessageCircle } from "lucide-react";
+import { Phone, MessageCircle, Instagram, Facebook, Youtube } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -23,6 +23,33 @@ export default function Footer() {
               Smart stock market learning platform for traders and investors.
               Learn trading with real market exposure and expert guidance.
             </p>
+
+            {/* 🔗 Social Icons */}
+            <div className="flex items-center gap-4 mt-5">
+              <a
+                href="https://www.instagram.com/sharemarketskillsacademy?igsh=MWZ4enk5ZjZwdWN0cw%3D%3D&utm_source=qr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-pink-500 transition"
+              >
+                <Instagram size={22} />
+              </a>
+
+              {/* Optional future icons */}
+                {/* Facebook */}
+              <a
+                href="https://www.facebook.com/Sharemarketskills"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-blue-500 transition"
+              >
+                <Facebook size={22} />
+              </a>
+
+              <a className="text-gray-400 hover:text-red-500 transition cursor-pointer">
+                <Youtube size={22} />
+              </a>
+            </div>
           </div>
 
           {/* 2️⃣ Quick Links */}
