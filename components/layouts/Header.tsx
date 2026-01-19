@@ -43,10 +43,32 @@ export default function Header() {
             </div>
 
             <div className="flex items-center gap-4">
-              <Link href="#"><Facebook size={16} /></Link>
-              <Link href="#"><Instagram size={16} /></Link>
-              <Link href="#"><Linkedin size={16} /></Link>
-            </div>
+  {/* Facebook */}
+  <a
+    href="https://www.facebook.com/Sharemarketskills"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-blue-600 transition"
+  >
+    <Facebook size={16} />
+  </a>
+
+  {/* Instagram */}
+  <a
+    href="https://www.instagram.com/sharemarketskillsacademy?igsh=MWZ4enk5ZjZwdWN0cw%3D%3D&utm_source=qr"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-pink-500 transition"
+  >
+    <Instagram size={16} />
+  </a>
+
+  {/* LinkedIn (future-ready) */}
+  <span className="text-gray-400 cursor-not-allowed">
+    <Linkedin size={16} />
+  </span>
+</div>
+
           </div>
         </div>
       )}
