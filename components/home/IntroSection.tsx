@@ -8,7 +8,7 @@ export default function IntroSection() {
       <div className="max-w-5xl px-6 text-center">
 
         {/* H2 Heading */}
-        <h2 className="text-3xl md:text-5xl font-bold mb-6">
+        <h2 className="text-3xl text-black md:text-5xl font-bold mb-6">
           Trusted Stock Market & Crypto Training Institute
           <span className="block text-[#7ED321] mt-2">
             in Ghaziabad & Delhi NCR
