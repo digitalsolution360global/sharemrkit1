@@ -6,17 +6,17 @@ import Link from "next/link";
 const slides = [
   {
     bg: "/banner/b1.jpg",
-    title: "INVEST YOUR MONEY",
-    highlight: "SMART SKILLS",
+    title: "Stock Market & Cryptocurrency",
+    highlight: "Trading Courses",
     desc:
-      "Learn stock market trading, options, mutual funds, and investment strategies from industry experts.",
+      "Learn stock market trading, investing & cryptocurrency trading with practical, expert-led courses in Ghaziabad & Delhi NCR.",
   },
   {
     bg: "/banner/b2.jpg",
-    title: "LEARN & GROW",
-    highlight: "WITH EXPERTS",
+    title: "Learn Trading & Investing",
+    highlight: "With Live Market Practice",
     desc:
-      "Professional trading courses designed to help you grow your wealth with confidence.",
+      "Professional stock market, options trading & crypto courses focused on real strategies, risk management & discipline.",
   },
 ];
 
@@ -27,58 +27,49 @@ export default function Banner() {
     const timer = setInterval(() => {
       setActive((prev) => (prev + 1) % slides.length);
     }, 5000);
-
     return () => clearInterval(timer);
   }, []);
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
-
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out
-          ${active === index ? "opacity-100 z-10" : "opacity-0 z-0"}`}
+          className={`absolute inset-0 transition-opacity duration-1000 ${
+            active === index ? "opacity-100 z-10" : "opacity-0 z-0"
+          }`}
         >
-          {/* Background with zoom */}
           <div
-            className={`absolute inset-0 bg-cover bg-center scale-100
-            ${active === index ? "animate-zoomSlow" : ""}`}
+            className={`absolute inset-0 bg-cover bg-center ${
+              active === index ? "animate-zoomSlow" : ""
+            }`}
             style={{ backgroundImage: `url(${slide.bg})` }}
-          ></div>
+          />
+          <div className="absolute inset-0 bg-black/60" />
 
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-black/60"></div>
-
-          {/* Content */}
           <div className="relative z-10 h-full flex items-center">
             <div className="max-w-7xl mx-auto px-6 text-white">
-              <h5 className="text-[#7ED321] font-semibold mb-4">
-                WELCOME TO SHAREMARKET SKILLS ACADEMY
-              </h5>
-
               <h1 className="text-4xl md:text-6xl font-bold leading-tight">
                 {slide.title} <br />
-                WITH <span className="text-[#7ED321]">{slide.highlight}</span>
+                <span className="text-[#7ED321]">{slide.highlight}</span>
               </h1>
 
-              <p className="mt-6 max-w-xl text-gray-200">
+              <p className="mt-6 max-w-2xl text-gray-200 text-lg">
                 {slide.desc}
               </p>
 
               <div className="mt-10 flex gap-4 flex-wrap">
                 <Link
-                  href="/"
-                  className="bg-[#2DB7F5] hover:bg-[#1aa3e8] text-white px-7 py-3 rounded-full font-semibold transition"
+                  href="/demo"
+                  className="bg-[#2DB7F5] hover:bg-[#1aa3e8] px-8 py-3 rounded-full font-semibold"
                 >
-                  Training
+                  Book Free Demo
                 </Link>
-
                 <Link
-                  href="/investment"
-                  className="bg-[#7ED321] hover:bg-[#6ac11c] text-white px-7 py-3 rounded-full font-semibold transition"
+                  href="/contact"
+                  className="bg-[#7ED321] hover:bg-[#6ac11c] px-8 py-3 rounded-full font-semibold"
                 >
-                  Investment
+                  Enquire Now
                 </Link>
               </div>
             </div>

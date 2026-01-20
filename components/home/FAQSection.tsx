@@ -5,31 +5,27 @@ import { Plus, Minus } from "lucide-react";
 
 const faqs = [
   {
-    question: "Is Share market trading risky for beginners?",
+    question: "Is this stock market course suitable for complete beginners?",
     answer:
-      "Share market trading involves risk, but with proper education, risk management, and guidance, beginners can trade safely and confidently.",
+      "Yes. Our stock market courses start from the basics and gradually move towards advanced trading and investing strategies, making them ideal for complete beginners.",
   },
   {
-    question: "Do I need prior experience to join your courses?",
+    question: "Do you provide crypto trading courses in Ghaziabad?",
     answer:
-      "No prior experience is required. Our courses are designed for beginners as well as experienced traders.",
+      "Yes. We offer crypto trading courses in Ghaziabad along with online cryptocurrency training programs for learners across India.",
   },
   {
-    question: "Are your trainers certified?",
+    question: "Is cryptocurrency trading legal in India?",
     answer:
-      "Yes, our trainers are NISM certified and have extensive real-world trading experience.",
+      "Cryptocurrency trading is not illegal in India. Our courses focus on proper education, compliance awareness, and effective risk management strategies.",
   },
   {
-    question: "Do you provide live market training?",
+    question: "Are online classes available?",
     answer:
-      "Yes, we provide live market sessions where students learn real-time analysis and trading strategies.",
-  },
-  {
-    question: "Will I get lifetime support after course completion?",
-    answer:
-      "Yes, we provide post-course support including doubt clearing sessions and market guidance.",
+      "Yes. We provide online stock market and crypto trading courses that can be accessed from anywhere in India.",
   },
 ];
+
 
 export default function FAQSection() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);

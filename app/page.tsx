@@ -12,6 +12,8 @@ import BlogSection from "@/components/home/BlogSection";
 import TeamSection from "@/components/home/TeamSection";
 import TestimonialsSection from "@/components/home/TestimonialsSection";
 import FAQSection from "@/components/home/FAQSection";
+import CoursesSection from "@/components/home/CoursesSection";
+import WhyChooseSection from "@/components/home/WhyChooseSection";
 
 // Dynamically import ScrollVideoSection to disable SSR
 const ScrollVideoSection = dynamic(
@@ -25,8 +27,11 @@ export default function HomePage() {
       <Banner />
       <CourseSearchBar />
       <IntroSection />
-      <ServicesSection />
+      <CoursesSection/>
+      {/* <WhyChooseSection /> */}
+      {/* <ServicesSection /> */}
       <AboutFioncaSection />
+
       <BenefitsSection />
       <ExperienceSection />
       <BlogSection />

@@ -5,24 +5,37 @@ import Image from "next/image";
 
 const benefits = [
   {
-    title: "Lending money for investment of your new projects",
-    desc: "We provide funding solutions for new ventures, helping investors grow their portfolio efficiently.",
+    title: "Beginners with no prior stock market or crypto knowledge",
+    desc: "This course is perfect for absolute beginners who want to learn stock market and cryptocurrency trading from scratch with clear concepts and practical examples.",
     img: "/img1.webp",
     highlight: true,
   },
   {
-    title: "Lending money for investment of your new projects",
-    desc: "Our flexible lending options allow easy access to funds for your business needs.",
+    title: "Students & fresh graduates looking for practical trading skills",
+    desc: "Ideal for students and fresh graduates who want hands-on trading skills, real market exposure, and career-oriented financial knowledge.",
     img: "/img2.jpg",
     highlight: false,
   },
   {
-    title: "Mobile payment is more flexible and easy for all investors",
-    desc: "Investors can make payments on-the-go with our seamless mobile payment solutions.",
+    title: "Working professionals aiming for financial literacy",
+    desc: "Designed for working professionals who want to understand investing, trading, and risk management to build an additional source of income.",
     img: "/img3.jpg",
     highlight: false,
   },
+  {
+    title: "Business owners seeking investment strategies",
+    desc: "Suitable for business owners who want to grow surplus funds using smart investment and trading strategies with disciplined risk management.",
+    img: "/img4.jpg",
+    highlight: false,
+  },
+  {
+    title: "Anyone searching for stock market & crypto courses in Delhi NCR",
+    desc: "Perfect for people searching online for stock market courses for beginners in Ghaziabad, crypto trading courses in Delhi NCR, or share market classes near them.",
+    img: "/img5.jpg",
+    highlight: false,
+  },
 ];
+
 
 export default function BenefitsSection() {
   const [activeIndex, setActiveIndex] = useState(0); // track which card is active
@@ -73,8 +86,8 @@ export default function BenefitsSection() {
               <Image
                 src={activeBenefit.img}  
                 alt={activeBenefit.title}
-                width={500}
-                height={500}
+                width={800}
+                height={800}
                 className="w-full h-full object-cover"
               />
             </div>
