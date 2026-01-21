@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { CheckCircle } from "lucide-react";
 
 export default function IntroSection() {
   return (
@@ -8,56 +9,51 @@ export default function IntroSection() {
       <div className="max-w-5xl px-6 text-center">
 
         {/* H2 Heading */}
-        <h2 className="text-3xl text-black md:text-5xl font-bold mb-6">
+        <h2 className="text-3xl md:text-5xl font-bold text-black mb-6 leading-tight">
           Trusted Stock Market & Crypto Training Institute
-          <span className="block text-[#7ED321] mt-2">
+          <span className="block text-[#7ED321] mt-3">
             in Ghaziabad & Delhi NCR
           </span>
         </h2>
 
         {/* Description */}
-        <p className="text-gray-600 text-lg md:text-xl mb-8">
-          Share Market Skills is a professional academy dedicated to teaching
-          practical trading and investment skills. We focus on helping learners:
+        <p className="text-gray-600 text-lg md:text-xl mb-12">
+          <strong>Share Market Skills</strong>is a professional academy dedicated to teaching practical trading and investment skills. We focus on helping learners:
+
         </p>
 
-     {/* Points */}
-<div className="max-w-4xl mx-auto mb-10">
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-800 text-lg">
+        {/* Points */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
 
-    <div className="flex items-start gap-3 bg-gray-100 border border-sky-200 rounded-xl p-6 shadow-sm h-full min-h-[110px]">
-      <span className="text-white font-bold text-xl">•</span>
-      <p>Understand how stock markets work</p>
-    </div>
+            {[
+              "Understand how stock markets work",
+              "Learn technical and fundamental analysis",
+              "Gain confidence in options, swing trading, and cryptocurrency trading",
+              "Develop disciplined investment & risk management strategies",
+            ].map((text, i) => (
+              <div
+                key={i}
+                className="flex items-start gap-4 bg-gray-50 border border-gray-200 rounded-2xl p-6 shadow hover:shadow-lg transition"
+              >
+                <CheckCircle className="w-6 h-6 text-[#7ED321] mt-1 flex-shrink-0" />
+                <p className="text-gray-800 text-lg">{text}</p>
+              </div>
+            ))}
 
-    <div className="flex items-start gap-3 bg-gray-100 border border-sky-200 rounded-xl p-6 shadow-sm h-full min-h-[110px]">
-      <span className="text-white font-bold text-xl">•</span>
-      <p>Learn technical and fundamental analysis</p>
-    </div>
-
-    <div className="flex items-start gap-3 bg-gray-100 border border-sky-200 rounded-xl p-6 shadow-sm h-full min-h-[110px]">
-      <span className="text-white font-bold text-xl">•</span>
-      <p>Gain confidence in options, swing trading, and cryptocurrency trading</p>
-    </div>
-
-    <div className="flex items-start gap-3  border bg-gray-100 rounded-xl p-6 shadow-sm h-full min-h-[110px]">
-      <span className="text-white font-bold text-xl">•</span>
-      <p>Develop disciplined investment and risk management strategies</p>
-    </div>
-
-  </div>
-</div>
-
+          </div>
+        </div>
 
         {/* Location Line */}
-        <p className="text-gray-600 text-lg mb-8">
-          📍 Courses available offline in Ghaziabad and online across India.
+        <p className="text-gray-600 text-lg mb-10">
+          📍 Offline classroom courses in <strong>Ghaziabad</strong> & online
+          training available across <strong>India</strong>.
         </p>
 
         {/* CTA */}
         <Link
           href="#courses"
-          className="inline-block text-[#2DB7F5] font-semibold text-lg hover:underline"
+          className="inline-flex items-center gap-2 bg-[#7ED321] text-black px-10 py-4 rounded-full font-semibold text-lg hover:bg-[#6ac11c] transition"
         >
           Explore Our Courses →
         </Link>
