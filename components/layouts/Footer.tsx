@@ -3,6 +3,9 @@
 import Image from "next/image";
 import { Phone, MessageCircle, Instagram, Facebook, Youtube } from "lucide-react";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+
 export default function Footer() {
   return (
     <>
@@ -81,7 +84,7 @@ export default function Footer() {
               ShareMrKit Academy<br />
               Sector 62, Noida<br />
               Uttar Pradesh, India<br />
-              📞 +91 99999 99999
+              📞 +91 8460188483
             </p>
           </div>
 
@@ -93,18 +96,19 @@ export default function Footer() {
       </footer>
 
       {/* ============ FLOATING WHATSAPP (DESKTOP ONLY) ============ */}
-      <a
-        href="https://wa.me/919999999999"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hidden md:flex fixed bottom-6 right-6 z-[999]
-                   bg-green-500 hover:bg-green-600
-                   w-14 h-14 rounded-full
-                   items-center justify-center
-                   shadow-xl transition"
-      >
-        <MessageCircle size={28} className="text-white" />
-      </a>
+     <a
+  href="https://wa.me/918460188483"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="hidden md:flex fixed bottom-6 right-6 z-[999]
+             bg-green-500 hover:bg-green-600
+             w-14 h-14 rounded-full
+             items-center justify-center
+             shadow-xl transition"
+>
+  <FontAwesomeIcon icon={faWhatsapp} className="text-white text-3xl" />
+</a>
+
 
       {/* ============ MOBILE FIXED BAR ============ */}
       <div className="fixed bottom-0 left-0 right-0 z-50 bg-black border-t border-gray-800
@@ -120,17 +124,17 @@ export default function Footer() {
 
         {/* Right Icons */}
         <div className="flex items-center gap-6">
-          <a href="tel:+919999999999" className="text-white">
+          <a href="tel:+918460188483" className="text-white">
             <Phone size={26} />
           </a>
 
           <a
-            href="https://wa.me/919999999999"
+            href="https://wa.me/918460188483"
             target="_blank"
             rel="noopener noreferrer"
             className="text-green-400"
           >
-            <MessageCircle size={26} />
+            <FontAwesomeIcon icon={faWhatsapp} className="text-white text-3xl" />
           </a>
         </div>
       </div>
