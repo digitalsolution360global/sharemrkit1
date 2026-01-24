@@ -13,10 +13,10 @@ const slides = [
   },
   {
     bg: "/banner/b2.jpg",
-    title: "Learn Trading & Investing",
-    highlight: "With Live Market Practice",
+    title: "Auto Investment Strategies for ",
+    highlight: "Consistent Growth",
     desc:
-      "Professional stock market, options trading & crypto courses focused on real strategies, risk management & discipline.",
+      "Emotion-free investing powered by proven automated systems",
   },
 ];
 
@@ -60,10 +60,10 @@ export default function Banner() {
 
               <div className="mt-10 flex gap-4 flex-wrap">
                <Link
-    href="/"
+    href="https://mosl.co/MOSWEB/hYGiFdNDE0"
     className="bg-[#2DB7F5] hover:bg-[#1aa3e8] px-8 py-3 rounded-full font-semibold"
   >
-    Training
+    Get Started
   </Link>
 
   <Link

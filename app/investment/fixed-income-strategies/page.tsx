@@ -15,10 +15,13 @@ export default function FixedIncomeStrategiesPage() {
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 text-white">
           <p className="text-sm text-gray-300 mb-3">
-            <Link href="/" className="hover:text-[#7ED321]">
-              Home
-            </Link>{" "}
-            / Investment Plans
+           <Link href="/" className="hover:text-[#7ED321]">
+            Home
+          </Link>
+          {" "} / {" "}
+          <Link href="/investment" className="hover:text-[#7ED321]">
+            Investment Plans
+          </Link>/fixed-income-strategies
           </p>
 
           <h1 className="text-4xl md:text-6xl font-bold">

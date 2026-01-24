@@ -1,128 +1,140 @@
-"use client";
+"use client"
 
-import Link from "next/link";
-import Image from "next/image";
-import { ArrowRight } from "lucide-react";
+import Link from "next/link"
+import Image from "next/image"
+import { CheckCircle } from "lucide-react"
 
 /* ================= COURSES DATA ================= */
 const courses = [
   {
-    title: "Trading Course",
-    desc: "Master intraday, swing and positional trading with live market practice.",
+    title: "Stock Market Trading Courses",
+    location: "Ghaziabad & Delhi NCR",
     image: "/services/s1.jpg",
+    points: [
+      "Stock market course for beginners in Ghaziabad",
+      "Share market trading course with live market practice",
+      "Technical analysis course (Indian stock market)",
+      "Fundamental analysis for long-term investing",
+      "Swing trading & positional trading strategies",
+      "Options trading course with live examples (Futures & Options)",
+      "Risk management & trading psychology",
+    ],
   },
   {
-    title: "Algo Trading",
-    desc: "Learn algorithmic trading strategies using automation and data.",
+    title: "Cryptocurrency & Crypto Trading",
+    location: "Ghaziabad & Delhi NCR",
     image: "/services/s2.png",
+    points: [
+      "Crypto trading course for beginners in Ghaziabad",
+      "Cryptocurrency trading course in Delhi NCR",
+      "Bitcoin & altcoin trading fundamentals",
+      "Crypto technical analysis & chart reading",
+      "Spot & futures crypto trading basics",
+      "Online crypto trading course with live guidance",
+      "Best crypto trading classes near me",
+    ],
   },
   {
-    title: "Demat Account",
-    desc: "Complete guidance on opening and managing Demat & Trading accounts.",
-    image: "/services/s3.webp",
+    title: "Investing & Wealth Building",
+    location: "Long-Term Financial Growth",
+    image: "/services/s4.webp",
+    points: [
+      "How to invest in stock market for beginners in Ghaziabad",
+      "Long-term investing strategies (Delhi NCR)",
+      "Mutual funds & portfolio basics",
+      "Difference between trading and investing",
+      "Demat & trading account guidance",
+      "Capital protection & risk planning",
+    ],
   },
-  {
-    title: "Mutual Funds",
-    desc: "Build long-term wealth with smart mutual fund investment strategies.",
-    image:  "/services/s4.webp",
-  },
-  {
-    title: "Bonds",
-    desc: "Understand fixed income instruments for stable and safe returns.",
-    image:  "/services/s5.jpeg",
-  },
-];
+]
 
 export default function CoursesClient() {
   return (
     <>
-      {/* ================= HERO / BANNER ================= */}
+      {/* ================= HERO ================= */}
       <section
         className="relative h-[55vh] flex items-center bg-cover bg-center"
         style={{ backgroundImage: "url('/banner/b1.jpg')" }}
       >
         <div className="absolute inset-0 bg-black/70" />
-
         <div className="relative z-10 max-w-7xl mx-auto px-6 text-white">
           <p className="text-sm text-gray-300 mb-3">
-            <Link href="/" className="hover:text-[#7ED321]">
-              Home
-            </Link>{" "}
-            / Courses
+            <Link href="/" className="hover:text-[#7ED321]">Home</Link> / Courses
           </p>
-
           <h1 className="text-4xl md:text-6xl font-bold">
             Our <span className="text-[#7ED321]">Courses</span>
           </h1>
-
           <p className="mt-5 max-w-2xl text-gray-200">
-            Practical stock market courses designed for beginners to advanced traders.
+            Practical stock market & crypto courses with live market exposure.
           </p>
         </div>
       </section>
 
-      {/* ================= INTRO SECTION (NEW) ================= */}
+      {/* ================= INTRO SECTION ================= */}
       <section className="bg-white py-16">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl text-black md:text-4xl font-bold mb-4">
-            Learn Stock Market the <span className="text-[#7ED321]">Right Way</span>
+          <h2 className="text-3xl md:text-4xl text-black font-bold mb-4">
+            Learn Trading the <span className="text-[#7ED321]">Right Way</span>
           </h2>
-
           <p className="text-gray-600 text-lg leading-relaxed">
-            At Share Market Skills Academy, we focus on practical learning,
-            disciplined strategies, and real market experience. Our courses are
-            designed to help beginners build strong foundations and enable
-            traders to grow with confidence and consistency.
+            Our courses are designed for beginners to advanced traders with
+            practical market exposure, disciplined strategies, and real-time
+            guidance to help you grow confidently in trading and investing.
           </p>
         </div>
       </section>
 
-      {/* ================= COURSES SECTION ================= */}
+      {/* ================= COURSES ================= */}
       <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="md:text-center mb-14">
-            <h2 className="text-3xl text-black md:text-4xl font-bold">
-              Learn. Trade. <span className="text-[#7ED321]">Grow.</span>
-            </h2>
-            <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-              Choose from our expertly crafted stock market and investment courses.
-            </p>
-          </div>
+        <div className="max-w-7xl mx-auto px-6 space-y-20">
 
-          <div className="grid sm:grid-cols-2 text-black md:grid-cols-3 gap-8">
-            {courses.map((course, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-2xl shadow hover:shadow-xl transition overflow-hidden"
-              >
-                <div className="relative h-52">
-                  <Image
-                    src={course.image}
-                    alt={course.title}
-                    fill
-                    className="object-cover hover:scale-110 transition duration-300"
-                  />
-                </div>
-
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-3">
-                    {course.title}
-                  </h3>
-
-                  <p className="text-gray-600 mb-5">{course.desc}</p>
-
-                  <Link
-                    href="/contact"
-                    className="inline-flex items-center gap-2 text-[#7ED321] font-semibold hover:gap-3 transition"
-                  >
-                    Read More <ArrowRight size={18} />
-                  </Link>
-                </div>
+          {courses.map((course, index) => (
+            <div
+              key={index}
+              className={`grid md:grid-cols-2 gap-12 items-center ${
+                index % 2 !== 0 ? "md:flex-row-reverse md:grid-flow-col-dense" : ""
+              }`}
+            >
+              {/* Image */}
+              <div className="relative h-[320px] md:h-[420px] rounded-2xl overflow-hidden shadow-lg">
+                <Image
+                  src={course.image}
+                  alt={course.title}
+                  fill
+                  className="object-cover hover:scale-105 transition duration-500"
+                />
               </div>
-            ))}
-          </div>
+
+              {/* Content */}
+              <div className="bg-white p-8 rounded-2xl shadow-lg">
+                <h2 className="text-3xl text-black font-bold mb-2">
+                  {course.title}
+                </h2>
+                <p className="text-[#7ED321] font-medium mb-5">
+                  {course.location}
+                </p>
+
+                <ul className="space-y-3 text-gray-700">
+                  {course.points.map((point, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <CheckCircle size={18} className="text-[#7ED321] mt-1" />
+                      <span>{point}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <Link
+                  href="/contact"
+                  className="inline-block mt-6 bg-[#7ED321] text-black px-6 py-3 rounded-lg font-semibold hover:bg-green-500 transition"
+                >
+                  Enquire Now
+                </Link>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
     </>
-  );
+  )
 }
