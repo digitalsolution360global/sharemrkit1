@@ -43,7 +43,7 @@ export default function ClientVideosSection() {
             >
               {/* TEXT */}
               <div className="p-6 text-left">
-                <h3 className="text-xl font-semibold mb-1">
+                <h3 className="text-xl text-black font-semibold mb-1">
                   {review.title}
                 </h3>
                 <p className="text-gray-600">{review.sub}</p>
