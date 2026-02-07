@@ -7,9 +7,9 @@ import { motion } from "framer-motion"
 
 export const metadata = {
   title: "Top-Rated Share Market Course in Ghaziabad | SMSA Trading Academy",
-  description: "Join SMSA, the leading trading academy in Ghaziabad, for expert-led share market courses. Master technical analysis, options trading, and investment strategies with practical, live-market training designed for beginners and pros alike.
-",
-}
+  description: "Join SMSA, the leading trading academy in Ghaziabad, for expert-led share market courses. Master technical analysis, options trading, and investment strategies with practical, live-market training designed for beginners and pros alike.",
+};
+
 const services = [
   {
     title: "Mutual Fund",
