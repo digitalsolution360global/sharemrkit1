@@ -1,13 +1,10 @@
-"use client"
-
-import Image from "next/image"
-import Link from "next/link"
-import { motion } from "framer-motion"
-
+import Image from "next/image";
+import Link from "next/link";
 
 export const metadata = {
   title: "Top-Rated Share Market Course in Ghaziabad | SMSA Trading Academy",
-  description: "Join SMSA, the leading trading academy in Ghaziabad, for expert-led share market courses. Master technical analysis, options trading, and investment strategies with practical, live-market training designed for beginners and pros alike.",
+  description:
+    "Join SMSA, the leading trading academy in Ghaziabad, for expert-led share market courses. Master technical analysis, options trading, and investment strategies with practical, live-market training designed for beginners and pros alike.",
 };
 
 const services = [
@@ -36,11 +33,11 @@ const services = [
     desc: "Smart algorithm-based trading for faster and data-driven decisions.",
     img: "/services/algo-trading.jpeg",
   },
-]
+];
 
 export default function ServicesDetailPage() {
-  return(<div className="bg-white text-black">
-
+  return (
+    <div className="bg-white text-black">
       {/* ================= BANNER ================= */}
       <section
         className="relative h-[55vh] flex items-center bg-cover bg-center"
@@ -53,14 +50,9 @@ export default function ServicesDetailPage() {
             <Link href="/" className="hover:text-[#7ED321]">Home</Link> / Services
           </p>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            className="text-4xl md:text-6xl font-bold"
-          >
+          <h1 className="text-4xl md:text-6xl font-bold">
             Best Share Market Course in <span className="text-[#7ED321]">Ghaziabad</span>
-          </motion.h1>
+          </h1>
 
           <p className="mt-5 max-w-2xl text-gray-200">
             Reliable financial services designed for growth, stability & security.
@@ -68,7 +60,7 @@ export default function ServicesDetailPage() {
         </div>
       </section>
 
-      {/* ================= INTRO SECTION ================= */}
+      {/* ================= INTRO ================= */}
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -76,10 +68,8 @@ export default function ServicesDetailPage() {
           </h2>
 
           <p className="text-gray-600 text-lg leading-relaxed">
-            We offer a complete range of investment and financial services
-            tailored to help you build long-term wealth with confidence.
-            Our expert-driven approach focuses on safety, consistency, and
-            informed decision-making.
+            We offer a complete range of investment and financial services tailored to help you build long-term wealth with confidence.
+            Our expert-driven approach focuses on safety, consistency, and informed decision-making.
           </p>
         </div>
       </section>
@@ -87,14 +77,9 @@ export default function ServicesDetailPage() {
       {/* ================= SERVICES GRID ================= */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-
           {services.map((item, index) => (
-            <motion.div
+            <div
               key={index}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
               className="bg-white rounded-2xl shadow hover:shadow-xl transition overflow-hidden"
             >
               <div className="relative h-48">
@@ -102,23 +87,18 @@ export default function ServicesDetailPage() {
                   src={item.img}
                   alt={item.title}
                   fill
-                  className=" object-top hover:scale-110 transition duration-300"
+                  className="object-top hover:scale-110 transition duration-300"
                 />
               </div>
 
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">
-                  {item.title}
-                </h3>
-                <p className="text-gray-600 text-sm">
-                  {item.desc}
-                </p>
+                <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                <p className="text-gray-600 text-sm">{item.desc}</p>
               </div>
-            </motion.div>
+            </div>
           ))}
-
         </div>
       </section>
-
-    </div>)
+    </div>
+  );
 }
