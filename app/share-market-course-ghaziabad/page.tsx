@@ -1,5 +1,9 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Plus, Minus } from "lucide-react";
 
 export const metadata = {
   title: "Top-Rated Share Market Course in Ghaziabad | SMSA Trading Academy",
@@ -7,35 +11,41 @@ export const metadata = {
     "Join SMSA, the leading trading academy in Ghaziabad, for expert-led share market courses. Master technical analysis, options trading, and investment strategies with practical, live-market training designed for beginners and pros alike.",
 };
 
-const services = [
+const faqs = [
   {
-    title: "Mutual Fund",
-    desc: "Professionally managed mutual funds to grow your wealth safely.",
-    img: "/services/mutual-fund.jpeg",
+    question: "Is the course fee for the investment course in Ghaziabad affordable?",
+    answer:
+      "Yes, we pride ourselves on offering an affordable trading course in Ghaziabad that provides maximum value through high-quality mentorship.",
   },
   {
-    title: "Bonds",
-    desc: "Low-risk bond investments with fixed and stable returns.",
-    img: "/services/bonds.jpeg",
+    question: "Do you teach mobile trading or only desktop-based trading?",
+    answer:
+      "We provide a share market course in Ghaziabad on both platforms, ensuring you can manage your trades and analyze charts using professional mobile apps and advanced desktop software.",
   },
   {
-    title: "Fixed Deposit",
-    desc: "Guaranteed returns through secure and high-interest fixed deposits.",
-    img: "/services/fixed-deposit.jpeg",
+    question: "What makes SMSA the best share market institute in Ghaziabad?",
+    answer:
+      "SMSA provides a unique investment course in Ghaziabad, composed of 100% practical live-market training and a curriculum updated for 2026's AI-driven trading environment.",
   },
   {
-    title: "Insurance",
-    desc: "Complete insurance solutions for life, health, and asset protection.",
-    img: "/services/insurance.jpeg",
+    question: "Will I get a certificate after completing the trading course in Ghaziabad?",
+    answer:
+      "Yes, every student receives a professional certification from ShareMarket Skills Academy.",
   },
   {
-    title: "Algo Trading",
-    desc: "Smart algorithm-based trading for faster and data-driven decisions.",
-    img: "/services/algo-trading.jpeg",
+    question: "Do you offer online or offline trading courses in Ghaziabad?",
+    answer:
+      "We offer both flexible modes, including interactive offline classroom sessions at our Ghaziabad center and online live classes.",
   },
 ];
 
 export default function ServicesDetailPage() {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+  const toggleFAQ = (index: number) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+
   return (
     <div className="bg-white text-black">
       {/* ================= BANNER ================= */}
@@ -74,29 +84,51 @@ export default function ServicesDetailPage() {
         </div>
       </section>
 
-      {/* ================= SERVICES GRID ================= */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-          {services.map((item, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-2xl shadow hover:shadow-xl transition overflow-hidden"
-            >
-              <div className="relative h-48">
-                <Image
-                  src={item.img}
-                  alt={item.title}
-                  fill
-                  className="object-top hover:scale-110 transition duration-300"
-                />
-              </div>
+      {/* ================= FAQ SECTION ================= */}
+      <section className="bg-gray-50 py-28">
+        <div className="max-w-5xl mx-auto px-6">
 
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                <p className="text-gray-600 text-sm">{item.desc}</p>
+          <div className="text-center mb-16">
+            <p className="text-green-500 font-semibold mb-2">FAQ</p>
+            <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Got questions? We’ve got answers. Everything you need to know before starting your trading journey.
+            </p>
+          </div>
+
+          <div className="space-y-6">
+            {faqs.map((faq, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden"
+              >
+                <button
+                  onClick={() => toggleFAQ(index)}
+                  className="w-full flex justify-between items-center text-left p-6"
+                >
+                  <h3 className="text-lg md:text-xl font-semibold text-gray-900">
+                    {faq.question}
+                  </h3>
+                  <span className="text-green-500">
+                    {activeIndex === index ? <Minus /> : <Plus />}
+                  </span>
+                </button>
+
+                <div
+                  className={`px-6 overflow-hidden transition-all duration-300 ${
+                    activeIndex === index ? "max-h-40 pb-6" : "max-h-0"
+                  }`}
+                >
+                  <p className="text-gray-600 leading-relaxed">
+                    {faq.answer}
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+
         </div>
       </section>
     </div>
