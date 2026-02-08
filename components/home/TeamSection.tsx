@@ -41,7 +41,7 @@ export default function TeamSection() {
         </div>
 
         {/* Team Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {teamMembers.map((member, index) => (
             <Link
               key={index}
