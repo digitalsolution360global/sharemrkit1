@@ -16,6 +16,12 @@ const teamMembers = [
     img: "/nikhil.png",
     slug: "nikhil-singh",
   },
+  {
+    name: "Shobhit Bindal",
+    role: "Derivatives Specialist & Trading Educator ",
+    img: "/shobhit.jpeg",
+    slug: "shobhit-bindal",
+  },
 ];
 
 export default function TeamSection() {
