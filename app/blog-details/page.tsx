@@ -2,97 +2,97 @@ import Image from "next/image"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Stock Market Basics for Beginners | ShareMarket Skills",
+  title: "Blog | ShareMarket Skills Academy",
   description:
-    "Learn stock market basics, trading strategies, and investment fundamentals in this detailed guide.",
+    "A detailed article on trading, investing, and market strategies from ShareMarket Skills Academy.",
 }
 
-export default function BlogDemoPage() {
+export default function BlogDetails() {
   return (
-    <main className="bg-gray-50 min-h-screen">
+    <main className="bg-gray-50 min-h-screen pb-16">
       
-      {/* Hero Section */}
-      <section className="bg-blue-900 text-white py-16">
-        <div className="max-w-4xl mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-            Stock Market Basics for Beginners
+      {/* FEATURED IMAGE */}
+      <section className="relative h-64 w-full">
+        <Image
+          src="/blog-featured.jpg"
+          alt="Stock Market Blog"
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-black opacity-40"></div>
+      </section>
+
+      {/* BLOG HEADER */}
+      <section className="max-w-4xl mx-auto px-4 -mt-16">
+        <div className="bg-white shadow-lg rounded-lg p-6">
+          
+          <h1 className="text-4xl font-bold text-gray-900">
+            Proven Stock Market Strategies for Consistent Growth
           </h1>
-          <p className="mt-4 text-blue-200 text-sm">
-            Published on January 20, 2026 • By ShareMarket Skills Academy
-          </p>
+
+          <div className="flex items-center gap-4 mt-3 text-sm text-gray-600">
+            <span>By ShareMarket Skills Academy</span>
+            <span>·</span>
+            <span>Jan 20, 2026</span>
+          </div>
+
+          <div className="flex gap-3 mt-4">
+            <button className="text-blue-600 hover:underline text-sm">
+              Share on Facebook
+            </button>
+            <button className="text-blue-600 hover:underline text-sm">
+              Tweet
+            </button>
+          </div>
+
         </div>
       </section>
 
-      {/* Blog Content */}
-      <section className="max-w-4xl mx-auto px-4 py-12 bg-white shadow-lg -mt-10 rounded-xl relative z-10">
-        
-        {/* Featured Image */}
-        <div className="relative w-full h-72 mb-8">
-          <Image
-            src="/blog-demo.jpg"  // put image inside public folder
-            alt="Stock Market Basics"
-            fill
-            className="object-cover rounded-lg"
-          />
-        </div>
-
-        {/* Content */}
-        <article className="prose max-w-none prose-blue">
+      {/* BLOG CONTENT */}
+      <section className="max-w-4xl mx-auto px-4 mt-8">
+        <article className="prose prose-blue prose-lg bg-white p-6 rounded-lg shadow-lg">
           
-          <h2>What is the Stock Market?</h2>
           <p>
-            The stock market is a platform where investors buy and sell shares 
-            of publicly listed companies. It helps businesses raise capital 
-            and allows investors to participate in company growth.
+            The stock market is not just a place to trade — it’s a discipline of patience, strategy, and consistent learning. In this article, we explore practical strategies that investors and traders use to grow their capital and manage risk effectively. :contentReference[oaicite:1]{index=1}
           </p>
 
-          <h2>Why Should You Learn Stock Trading?</h2>
+          <h2>Understand Market Cycles</h2>
           <p>
-            Stock trading helps you generate wealth, build passive income, 
-            and understand financial markets. With proper education and risk 
-            management, trading can become a strong income source.
+            Markets move in cycles — boom, correction, consolidation, and recovery. Recognizing where the market currently stands helps you make more informed entries and exits. :contentReference[oaicite:2]{index=2}
           </p>
 
-          <h2>Types of Trading</h2>
-          <ul>
-            <li>Intraday Trading</li>
-            <li>Swing Trading</li>
-            <li>Positional Trading</li>
-            <li>Options & Futures Trading</li>
-          </ul>
-
-          <h2>Basic Trading Strategy</h2>
+          <h2>Technical & Fundamental Balance</h2>
           <p>
-            Beginners should start with technical analysis basics such as 
-            support & resistance, moving averages, and risk management.
+            A mix of both technical analysis for timing your trades and fundamental analysis for long-term investment decisions gives you stronger confidence and lower risk over time. :contentReference[oaicite:3]{index=3}
           </p>
 
           <blockquote>
-            “The goal of a successful trader is to make the best trades. 
-            Money is secondary.” – Alexander Elder
+            “Risk management is not just a strategy — it’s your safety net in trading.” – Market Mentor
           </blockquote>
+
+          <h2>Support & Resistance Levels</h2>
+          <p>
+            Support levels indicate where buyers step in, and resistance suggests where sellers dominate. These are key zones for planning your trades, entries, and stop-loss placements. :contentReference[oaicite:4]{index=4}
+          </p>
 
           <h2>Conclusion</h2>
           <p>
-            Start learning today and build strong financial knowledge with 
-            structured training programs. Join ShareMarket Skills Academy 
-            to begin your professional trading journey.
+            Learning the markets is a continuous journey — not a one-day task. Sharpen your skill with structured learning, real market examples, and strategy reviews to truly grow as a trader. :contentReference[oaicite:5]{index=5}
           </p>
 
         </article>
-
       </section>
 
-      {/* CTA Section */}
-      <section className="bg-blue-900 text-white py-12 mt-16">
-        <div className="max-w-4xl mx-auto px-4 text-center">
+      {/* CTA SECTION */}
+      <section className="bg-blue-900 text-white py-12 mt-10">
+        <div className="max-w-4xl mx-auto text-center px-4">
           <h3 className="text-2xl font-semibold">
-            Want to Learn Trading Professionally?
+            Want to Master Trading & Investing?
           </h3>
-          <p className="mt-3 text-blue-200">
-            Join our advanced share market course and start your journey today.
+          <p className="mt-3 text-blue-200 text-lg">
+            Join our expert-led courses and learn practical strategies used by professionals.
           </p>
-          <button className="mt-6 bg-white text-blue-900 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">
+          <button className="mt-6 bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">
             Enroll Now
           </button>
         </div>
