@@ -128,6 +128,13 @@ export default function Header() {
                     <div className="w-2 h-2 bg-[#7ED321] rounded-full group-hover/link:bg-white transition-colors animate-pulse" />
                     CRYPTO TRADING
                   </Link>
+                  <Link 
+                    href="/online-training" 
+                    className="flex items-center gap-3 px-5 py-4 text-gray-700 hover:bg-[#7ED321] hover:text-white transition-all text-[13px] font-bold group/link"
+                  >
+                    <div className="w-2 h-2 bg-[#7ED321] rounded-full group-hover/link:bg-white transition-colors animate-pulse" />
+                    STOCK TRAINING
+                  </Link>
                 </div>
               </div>
             </div>
