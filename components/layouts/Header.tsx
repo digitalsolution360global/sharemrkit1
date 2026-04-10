@@ -185,6 +185,7 @@ export default function Header() {
                 </Link>
                 <div className="pl-4 flex flex-col gap-3 mt-1 border-l-2 border-gray-100">
                   <Link href="/crypto-trading-course" onClick={() => setMenuOpen(false)} className="text-sm">Crypto Trading</Link>
+                  <Link href="/online-training" onClick={() => setMenuOpen(false)} className="text-sm">Stock Training</Link>
                 </div>
               </div>
 
