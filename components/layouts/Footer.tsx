@@ -146,7 +146,7 @@ export default function Footer() {
             {/* 🗺️ Small Google Map */}
             <div className="w-full h-40 rounded-lg overflow-hidden border border-gray-800">
               <iframe
-                src="https://www.google.com/maps?q=41%20Vishnu%20Enclave,%20Main%20Hapur%20Road,%20Ghaziabad&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.361546079885!2d77.48570807443723!3d28.678829575639504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf34e4fde2697%3A0x2578fcd757789f38!2sShareMarket%20Skills%20Academy%20-%20Govindpuram!5e0!3m2!1sen!2sin!4v1775797401097!5m2!1sen!2sin"
                 className="w-full h-full"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

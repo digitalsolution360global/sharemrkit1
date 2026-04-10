@@ -172,7 +172,7 @@ export default function ContactClient() {
 
             <div className="flex-1 rounded-2xl overflow-hidden shadow-lg min-h-[350px]">
               <iframe
-                src="https://www.google.com/maps?q=41%20Vishnu%20Enclave,%20Main%20Hapur%20Road,%20Ghaziabad&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.361546079885!2d77.48570807443723!3d28.678829575639504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf34e4fde2697%3A0x2578fcd757789f38!2sShareMarket%20Skills%20Academy%20-%20Govindpuram!5e0!3m2!1sen!2sin!4v1775797401097!5m2!1sen!2sin"
                 className="w-full h-full"
                 loading="lazy"
               />
@@ -180,7 +180,7 @@ export default function ContactClient() {
 
             <div className="flex-1 rounded-2xl overflow-hidden shadow-lg min-h-[350px]">
               <iframe
-                src="https://www.google.com/maps?q=407%20AVS%20City%20Square,%20Raj%20Nagar%20Extension,%20Ghaziabad&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.5458692394195!2d77.42848737443835!3d28.703228375626274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf1d008cc1187%3A0x721e2f4a909a3d38!2sShareMarket%20Skills%20Academy%20-%20Raj%20Nagar%20Extension!5e0!3m2!1sen!2sin!4v1775797567803!5m2!1sen!2sin"
                 className="w-full h-full"
                 loading="lazy"
               />
