@@ -31,14 +31,14 @@ const allBlogs = [
     category: ["Stock Market", "Training", "Vishnu Enclave"],
     slug: "/share-market-training-near-vishnu-enclave",
   },
-  {
-    title: "Enhancing Creativity with Machine Learning",
-    desc:
-      "Explore how AI is revolutionizing the design process, from generating innovative concepts to automating.",
-    image: "/blogs/blog-thum-03.png",
-    category: ["Artificial Intelligence", "Machine Learning", "Deep Learning"],
-    slug: "/blogs/details",
-  },
+  // {
+  //   title: "Enhancing Creativity with Machine Learning",
+  //   desc:
+  //     "Explore how AI is revolutionizing the design process, from generating innovative concepts to automating.",
+  //   image: "/blogs/blog-thum-03.png",
+  //   category: ["Artificial Intelligence", "Machine Learning", "Deep Learning"],
+  //   slug: "/blogs/details",
+  // },
   {
     title: "Stock Market Course Near Me in Ghaziabad – Learn Trading",
     desc:
