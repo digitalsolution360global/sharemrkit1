@@ -129,7 +129,7 @@ export default function Header() {
                     CRYPTO TRADING
                   </Link>
                   <Link 
-                    href="/online-training" 
+                    href="/stock-marketing-training" 
                     className="flex items-center gap-3 px-5 py-4 text-gray-700 hover:bg-[#7ED321] hover:text-white transition-all text-[13px] font-bold group/link"
                   >
                     <div className="w-2 h-2 bg-[#7ED321] rounded-full group-hover/link:bg-white transition-colors animate-pulse" />
@@ -185,7 +185,7 @@ export default function Header() {
                 </Link>
                 <div className="pl-4 flex flex-col gap-3 mt-1 border-l-2 border-gray-100">
                   <Link href="/crypto-trading-course" onClick={() => setMenuOpen(false)} className="text-sm">Crypto Trading</Link>
-                  <Link href="/online-training" onClick={() => setMenuOpen(false)} className="text-sm">Stock Training</Link>
+                  <Link href="/stock-marketing-training" onClick={() => setMenuOpen(false)} className="text-sm">Stock Training</Link>
                 </div>
               </div>
 
