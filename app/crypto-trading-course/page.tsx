@@ -387,10 +387,10 @@ export default function CryptoTradingCourse() {
       </section>
 
       {/* ================= COURSE DETAILS / PRICING ================= */}
-      <section className="py-12 md:py-16 bg-gray-50 overflow-hidden">
+      {/* <section className="py-12 md:py-16 bg-gray-50 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16">
-            {/* Schedule */}
+            
             <div>
               <h2 className="text-3xl md:text-5xl font-bold mb-10 leading-snug">Course Schedule & <br /><span className="text-[#7ED321]">Details</span></h2>
               <div className="space-y-6">
@@ -412,7 +412,7 @@ export default function CryptoTradingCourse() {
               </div>
             </div>
 
-            {/* Pricing Card */}
+         
             <div className="bg-[#0a0a0a] rounded-[3rem] p-10 md:p-14 text-white relative flex flex-col justify-center shadow-2xl overflow-hidden border border-white/5">
               <div className="absolute top-0 right-0 w-64 h-64 bg-[#7ED321]/10 rounded-full blur-[100px] -mr-32 -mt-32" />
               <div className="relative z-10">
@@ -442,7 +442,7 @@ export default function CryptoTradingCourse() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ================= FINAL CTA ================= */}
       <section className="py-12 md:py-16 relative overflow-hidden">
