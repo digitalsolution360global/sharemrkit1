@@ -1,7 +1,12 @@
-"use client";
-
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
+import FAQSection from "./FAQSection"; 
+
+// ================= META TAGS =================
+export const metadata = {
+  title: "Best Stock Market Institute Ghaziabad | Start Your Trading Journey",
+  description: "Looking for the best stock market institute in Ghaziabad? Learn professional trading strategies and risk management at Share Market Skills Academy today.",
+};
 
 export default function BestShareMarketAcademyGhaziabad() {
   return (
@@ -20,8 +25,8 @@ export default function BestShareMarketAcademyGhaziabad() {
             <ArrowLeft size={16} /> Back to Blogs
           </Link>
           <h1 className="text-3xl md:text-5xl font-bold leading-tight">
-            Best Share Market Academy in <span className="text-[#7ED321]">Ghaziabad</span> <br />
-            Professional Trading & Investment Training
+            Best share market academy <span className="text-[#7ED321]">ghaziabad</span> <br />
+            Share Market Skills Academy
           </h1>
         </div>
       </section>
@@ -31,26 +36,52 @@ export default function BestShareMarketAcademyGhaziabad() {
         <div className="max-w-4xl mx-auto px-6 space-y-8 text-gray-700 leading-relaxed text-lg">
 
           <div className="prose max-w-none">
-            <p className="font-medium text-xl text-gray-800">
-              Looking for the best share market academy in Ghaziabad to start your trading journey? Choosing the right institute is the first and most important step toward becoming a successful trader. Our academy is recognized as one of the top trading institutes in Ghaziabad, offering practical and result-oriented stock market training.
-            </p>
+            <h2 className="text-2xl md:text-3xl font-bold text-black mb-6">
+              Master the Markets: Best Share Market Academy in Ghaziabad (Complete Guide 2026)
+            </h2>
 
             <p className="mt-8">
-              We focus on real-time market exposure, step-by-step guidance, and proven strategies that help beginners as well as experienced learners grow confidently in the stock market. Unlike many institutes that only provide theory, our training approach is completely practical and performance-focused.
+              Understanding the current share market and its ups and downs is not everyone’s cup of tea. For that, you require experts and their expertise to excel in the share market. Thanks to the best share market academy in ghaziabad, Share Market Skills Academy, for its immense work on freshers, who are new to the share market. 
+            </p>
+
+            <p className="mt-6">
+              We stand at the forefront of this educational revolution. Students who are keen to learn and implement their skills on the share market to get better returns can get all the possible help at our institution.
+            </p>
+
+            <p className="mt-6">
+              Here, every aspirant will get a blend of technical mastery, psychological discipline, and live market exposure. These tactics are not going to be achieved if you stick to the books. 
+            </p>
+
+            <p className="mt-6">
+              Join the elite league of successful traders today at Ghaziabad’s most trusted academy.
             </p>
 
             <h2 className="text-2xl md:text-3xl font-bold text-black mt-10 mb-6">
-              What Makes Us the Best Stock Market Institute in Ghaziabad?
+              Comprehensive Share Market Coaching in Ghaziabad for All Levels
             </h2>
-            <ul className="space-y-4 list-none pl-0">
+
+            <p className="mt-4">
+              Our share market coaching in Ghaziabad provides a structured roadmap. We recognize a beginner’s needs in the share market and give them the best knowledge in return.
+            </p>
+
+            <p className="mt-6">
+              The best part is, we stick to the three important pillars of modern trading – Price Action, Volume Analysis, and Data Decoding. To educate every aspirant based on these, our share market coaching ghaziabad is the right choice.
+            </p>
+
+            <p className="mt-6">
+              Time to understand how to make smart money with the help of top trading institute for beginners ghaziabad:
+            </p>
+
+            <ul className="space-y-4 list-none pl-0 mt-6">
               {[
-                "Beginner to Advanced Level Training",
-                "Live Market Trading Sessions",
-                "Technical & Fundamental Analysis",
-                "Intraday & Swing Trading Strategies",
-                "Risk & Money Management",
-                "Portfolio Building & Investment Planning",
-                "Regular Doubt Clearing & Mentorship Support"
+                "Build your foundation",
+                "Teach you to do advanced charting",
+                "Customize your roadmaps",
+                "Provide post-course support",
+                "Teach you about the risks",
+                "Teach you time decay and volatility of the market",
+                "Maintain emotional discipline",
+                "Calculate your risk-reward ratio"
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <span className="text-[#7ED321] text-xl">✔</span>
@@ -59,45 +90,62 @@ export default function BestShareMarketAcademyGhaziabad() {
               ))}
             </ul>
 
-            <p className="mt-8">
-              Our expert mentors have real market experience and guide students with simple explanations and practical examples. We help you understand how to read charts, identify market trends, and make disciplined trading decisions.
-            </p>
-
             <p className="mt-6">
-              Whether you are a student, working professional, or business owner, our structured learning program helps you build strong fundamentals and confidence. Our small batch sizes ensure personalized attention and better learning outcomes.
+              Learn the secrets of trading psychology at the best stock market institute ghaziabad—Start your journey with Share Market Skills Academy now!
             </p>
 
             <h2 className="text-2xl md:text-3xl font-bold text-black mt-12 mb-6">
-              Why Students Choose Our Academy:
+              2026 Market Trends: Why You Need Professional Training Now
             </h2>
-            <ul className="grid sm:grid-cols-2 gap-4 list-none pl-0">
+
+            <p className="mt-4">
+              Professionalism in trading is important as 2026 is not going to be the easiest year of earning money. It is only difficult when you lack skills and experience. That’s why you need perfect attention from the established tutors and current players of the share market. 
+            </p>
+
+            <p className="mt-6">
+              The time has shifted a lot, and it has taught users to divert their attention from "tips" or "free videos". They are not going to help in real-world cases. Share Market Skills Academy is the best share market academy in Ghaziabad.
+            </p>
+
+            <p className="mt-6">
+              Let’s discover why you need the right guidance: 
+            </p>
+
+            <ul className="space-y-4 list-none pl-0 mt-6">
               {[
-                "Practical Training Approach",
-                "Real-Time Trading Experience",
-                "Affordable Course Fees",
-                "Supportive Learning Environment",
-                "Career & Income Growth Opportunities"
+                "Learn to analyze Open Interest (OI) and Change in OI for trend reversal.",
+                "Analyze the movement of bots in the market.",
+                "Deep understanding of US Fed rates and global events to analyze the indian market.",
+                "Learn to build a long-term wealth portfolio."
               ].map((item, index) => (
-                <li key={index} className="flex items-center gap-3 bg-gray-50 p-4 rounded-lg border border-gray-100 hover:border-[#7ED321] transition">
-                  <span className="text-yellow-500 text-xl">⭐</span>
-                  <span className="font-semibold text-gray-800">{item}</span>
+                <li key={index} className="flex items-start gap-3">
+                  <span className="text-[#7ED321] text-xl">✔</span>
+                  <span>{item}</span>
                 </li>
               ))}
             </ul>
 
-            <div className="bg-[#f9f9f9] border-l-4 border-[#7ED321] p-6 mt-12 rounded-r-lg">
-              <p className="font-bold text-gray-900 mb-2">Enroll Now</p>
-              <p>
-                If you are serious about building a career in trading or generating additional income through smart investments, join the best share market academy in Ghaziabad today.
-              </p>
-              <p className="mt-4 font-semibold text-[#7ED321]">
-                📞 Enroll now at the top trading institute in Ghaziabad and take your first step toward financial success.
-              </p>
-            </div>
+            <p className="mt-6 font-semibold">
+              Don't get left behind—Sign up for the most advanced stock market course in Ghaziabad!
+            </p>
+
+            <h2 className="text-2xl md:text-3xl font-bold text-black mt-12 mb-6">
+              Conclusion
+            </h2>
+
+            <p className="mt-4">
+              Share Market Skills Academy offers more than just lessons. It is not a hard task anymore to find the best share market academy in Ghaziabad. Whether your goal is to leave your 9-to-5 job or simply grow your savings, our structured approach ensures you have the tools, the tech, and the temperament to win.
+            </p>
+
+            <p className="mt-6 font-bold text-[#7ED321]">
+              Start your journey with Share Market Skills Academy!
+            </p>
 
           </div>
         </div>
       </section>
+
+        {/* ================= FAQ SECTION ================= */}
+      <FAQSection />
     </div>
   );
 }
