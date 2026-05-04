@@ -16,9 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ShareMrKit | Smart Trading & Investments",
+  title: "Share Market Course in Ghaziabad | ShareMarket Skills Academy",
   description:
-    "ShareMrKit – Stock Market Trading, Mutual Funds, IPOs, Options, and Long-term Investments.",
+    "Learn stock market trading with practical strategies at ShareMarket Skills Academy. Join expert-led courses in Ghaziabad for intraday, options, and investing.",
 };
 
 export default function RootLayout({

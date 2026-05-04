@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import BlogClient from "./BlogClient";
 
 export const metadata: Metadata = {
-  title: "Blogs | ShareMarket Skills Academy",
+  title: "Stock Market Blogs & Trading Guides | ShareMarket Skills Academy",
   description:
-    "Read the latest blogs from ShareMarket Skills Academy on stock market, trading strategies, artificial intelligence, and financial education.",
+    "Stay updated with stock market tips, trading strategies & expert insights from the best share market institute in Ghaziabad. Learn and grow your trading skills",
 };
 
 export default function BlogsPage() {

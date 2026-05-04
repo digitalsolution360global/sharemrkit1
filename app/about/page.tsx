@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import AboutClient from "./AboutClient";
 
 export const metadata: Metadata = {
-  title: "About Us | ShareMarket Skills Academy",
+  title: "About Us | Best Share Market Institute in Ghaziabad",
   description:
-    "Learn about ShareMarket Skills Academy – our mission, vision, and expert-led approach to stock market education, trading, and investments.",
+    "Discover why ShareMarket Skills Academy is the best share market institute in Ghaziabad. Get expert mentorship, live trading sessions & practical learning.",
 };
 
 export default function AboutPage() {

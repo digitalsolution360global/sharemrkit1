@@ -156,7 +156,7 @@ export default function ShareMarketCourseBlog() {
               <p>
                 The journey to build a successful financial career isn’t a dream anymore, unless you receive the right share market training ghaziabad. At Share Market Skills Academy, we not only offer share market education but also create confident investors who can change their financial future easily. 
               </p>
-              <p className="mt-3 font-semibold text-[#7ED321]">
+              <p className="mt-3">
                 When you join the right market training institute Ghaziabad, there is no stopping for you to achieve your targets. Don't let the market's complexity intimidate you; let us simplify it. Time to transform your financial destiny today!
               </p>
             </div>
