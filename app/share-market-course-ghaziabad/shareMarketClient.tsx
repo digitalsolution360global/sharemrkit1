@@ -76,7 +76,7 @@ export default function ShareMarketCourseBlog() {
             </p>
 
             <p className="mt-6">
-              That’s why you need a platform that offers a comprehensive share market course in Ghaziabad. Users should understand why the ShareMarket Skills Academy, SMSA Ghaziabad is the right choice to start your career in finance or to seek a secondary income.
+              That’s why you need a platform that offers a comprehensive <Link href="/share-market-course-ghaziabad" className="text-blue-600 underline">share market course in Ghaziabad</Link>. Users should understand why the ShareMarket Skills Academy, SMSA Ghaziabad is the right choice to start your career in finance or to seek a secondary income.
             </p>
             <p className="mt-6">
               Time to focus on the structured approach to get next-level guidance and never feel lost in a sea full of financial turbulence. 
@@ -131,7 +131,7 @@ export default function ShareMarketCourseBlog() {
               !
             </p>
             <p className="mt-4">
-              At ShareMarket Skills Academy, we emphasize clean trading and advanced learning. So, we offer more than you won't just see those patterns in a textbook. 
+              At <Link href="/" className="text-blue-600 underline">ShareMarket Skills Academy</Link>, we emphasize clean trading and advanced learning. So, we offer more than you won't just see those patterns in a textbook. 
             </p>
             <p className="mt-4">
               This level of expertise is why we are recognized as the premier trading academy ghaziabad for those who want to master the art of timing their entries and exits with surgical precision.
