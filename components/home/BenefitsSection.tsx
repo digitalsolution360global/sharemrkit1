@@ -51,11 +51,11 @@ export default function BenefitsSection() {
           <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
             Benefits We Offer
           </h2>
-          <p className="text-gray-600 text-lg leading-relaxed">
+          {/* <p className="text-gray-600 text-lg leading-relaxed">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
             adipisci facilis cupiditate recusandae aperiam temporibus corporis
             itaque quis facere.
-          </p>
+          </p> */}
         </div>
 
         {/* Content */}
