@@ -16,9 +16,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.sharemarketskills.in"),
   title: "Share Market Course in Ghaziabad | ShareMarket Skills Academy",
   description:
     "Learn stock market trading with practical strategies at ShareMarket Skills Academy. Join expert-led courses in Ghaziabad for intraday, options, and investing.",
+    alternates: {
+    canonical: "./",
+  },
 };
 
 export default function RootLayout({
