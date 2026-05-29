@@ -5,24 +5,34 @@ import { Plus, Minus } from "lucide-react";
 
 const faqs = [
   {
-    question: "Is this stock market course suitable for complete beginners?",
+    question:
+      "What makes this the best stock market course for beginners in Ghaziabad in 2026?",
     answer:
-      "Yes. Our stock market courses start from the basics and gradually move towards advanced trading and investing strategies, making them ideal for complete beginners.",
+      "Our procedures are always effective and productive for students to balance the current market with the latest and modern trends. Here, students can get live market practice, including risk management tracking, and comprehensive journey.",
   },
   {
-    question: "Do you provide crypto trading courses in Ghaziabad?",
+    question:
+      "Do you provide advisory tips or direct account management services?",
     answer:
-      "Yes. We offer crypto trading courses in Ghaziabad along with online cryptocurrency training programs for learners across India.",
+      "No, students only get the best knowledge to work seamlessly in live market practice. Here, we empower you with independent trading skills.",
   },
   {
-    question: "Is cryptocurrency trading legal in India?",
+    question:
+      "Can I balance these classes with a full-time professional job?",
     answer:
-      "Cryptocurrency trading is not illegal in India. Our courses focus on proper education, compliance awareness, and effective risk management strategies.",
+      "Yes, the weekend batches are the best choice for working professionals. They can learn all about the share market through our Stock Market Coaching Ghaziabad.",
   },
   {
-    question: "Are online classes available?",
+    question:
+      "Do I get any certification after completing the Advanced Stock Market Training?",
     answer:
-      "Yes. We provide online stock market and crypto trading courses that can be accessed from anywhere in India.",
+      "Yes, certification is a must. With the course, you do not just receive the certification but the education that works for your benefit in trading.",
+  },
+  {
+    question:
+      "Can I take the Cryptocurrency Trading Course alongside the stock market modules?",
+    answer:
+      "Yes, you can. At Share Market Skills Academy, we offer a Crypto Investment Course and a Stock Market Course for Beginners side by side.",
   },
 ];
 
