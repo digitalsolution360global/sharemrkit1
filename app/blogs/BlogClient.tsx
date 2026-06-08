@@ -8,6 +8,14 @@ import { ArrowRight } from "lucide-react";
 /* ================= BLOG DATA ================= */
 const allBlogs = [
   {
+    title: "Best Trading & Cryptocurrency Course in Gaziabad, Delhi NCR",
+    desc:
+      "Today, creating wealth is no longer limited. Millions of smart individuals across India are invested in the cryptocurrency market. Well, this is the best platform to earn as it gives long-term financial freedom.",
+    image: "/blogs/share-market-course.png",
+    category: ["Share Market", "Trading", "Investment"],
+    slug: "/best-trading-cryptocurrency-course-ghaziabad-delhi-ncr",
+  },
+  {
     title: "Share Market Course in Ghaziabad – Start Your Trading Journey Today",
     desc:
       "Looking for the best share market course in Ghaziabad? Whether you are a student, working professional, or business owner, learning stock market trading can open the door to financial growth.",
