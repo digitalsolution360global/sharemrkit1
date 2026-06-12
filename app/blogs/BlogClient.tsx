@@ -8,6 +8,14 @@ import { ArrowRight } from "lucide-react";
 /* ================= BLOG DATA ================= */
 const allBlogs = [
   {
+    title: "How to study share market in india – Share Market Skills Academy",
+    desc:
+      "The Indian financial ecosystem is expanding. It gives more opportunities to new investors to explore and learn more from the stock market. Are you aware of the structural frameworks of the NSE BSE trading basics?",
+    image: "/blogs/share-market-course.png",
+    category: ["Share Market", "Trading", "Investment"],
+    slug: "/how-to-study-share-market-in-india-share-market-skills-academy",
+  },
+  {
     title: "Best Trading & Cryptocurrency Course in Gaziabad, Delhi NCR",
     desc:
       "Today, creating wealth is no longer limited. Millions of smart individuals across India are invested in the cryptocurrency market. Well, this is the best platform to earn as it gives long-term financial freedom.",

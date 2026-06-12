@@ -130,6 +130,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/how-to-study-share-market-in-india-share-market-skills-academy`,
+      lastModified: new Date(),
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/how-to-start-trading-in-ghaziabad`,
       lastModified: new Date(),
       priority: 0.8,
