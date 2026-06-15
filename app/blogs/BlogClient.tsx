@@ -13,6 +13,14 @@ const allBlogs = [
       "The Indian financial ecosystem is expanding. It gives more opportunities to new investors to explore and learn more from the stock market. Are you aware of the structural frameworks of the NSE BSE trading basics?",
     image: "/blogs/share-market-course.png",
     category: ["Share Market", "Trading", "Investment"],
+    slug: "/share-market-learning-guide-india",
+  },
+  {
+    title: "How to study share market in india – Share Market Skills Academy",
+    desc:
+      "The Indian financial ecosystem is expanding. It gives more opportunities to new investors to explore and learn more from the stock market. Are you aware of the structural frameworks of the NSE BSE trading basics?",
+    image: "/blogs/share-market-course.png",
+    category: ["Share Market", "Trading", "Investment"],
     slug: "/how-to-study-share-market-in-india-share-market-skills-academy",
   },
   {
