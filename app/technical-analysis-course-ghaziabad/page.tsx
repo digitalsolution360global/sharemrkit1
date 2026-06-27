@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
+import EnquiryForm from "@/components/layouts/EnquiryForm";
 
 export default function TechnicalAnalysisCourseGhaziabad() {
   return (
@@ -28,9 +29,11 @@ export default function TechnicalAnalysisCourseGhaziabad() {
 
       {/* ================= CONTENT ================= */}
       <section className="py-16 md:py-24">
-        <div className="max-w-4xl mx-auto px-6 space-y-8 text-gray-700 leading-relaxed text-lg">
-          
-          <div className="prose max-w-none">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+            {/* Main Content */}
+            <div className="lg:col-span-2">
+          <div className="prose max-w-none text-gray-700 leading-relaxed text-lg space-y-8">
             <p className="font-medium text-xl text-gray-800">
               Are you searching for the best technical analysis course in Ghaziabad to improve your trading skills? Our professional chart reading course in Ghaziabad is specially designed for beginners and intermediate traders who want to understand market trends, price movements, and trading signals in a practical way.
             </p>
@@ -96,6 +99,15 @@ export default function TechnicalAnalysisCourseGhaziabad() {
               </p>
             </div>
 
+          </div>
+            </div>
+
+            {/* Sidebar / Enquiry Form */}
+            <div className="lg:col-span-1">
+              <div className="sticky top-24">
+                <EnquiryForm />
+              </div>
+            </div>
           </div>
         </div>
       </section>

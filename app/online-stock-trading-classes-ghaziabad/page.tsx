@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
+import EnquiryForm from "@/components/layouts/EnquiryForm";
 
 export default function OnlineStockTradingClassesGhaziabad() {
   return (
@@ -28,85 +29,97 @@ export default function OnlineStockTradingClassesGhaziabad() {
 
       {/* ================= CONTENT ================= */}
       <section className="py-16 md:py-24">
-        <div className="max-w-4xl mx-auto px-6 space-y-8 text-gray-700 leading-relaxed text-lg">
-          <div className="prose max-w-none">
-            <p className="font-medium text-xl text-gray-800">
-              Are you searching for the best online stock trading classes in Ghaziabad? Now you can learn
-              professional trading skills from the comfort of your home. Our structured and practical online
-              trading course in Ghaziabad is designed for students, working professionals, and aspiring traders
-              who want flexible learning with expert guidance.
-            </p>
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+            {/* Main Content */}
+            <div className="lg:col-span-2">
+              <div className="prose max-w-none text-gray-700 leading-relaxed text-lg space-y-8">
+                <p className="font-medium text-xl text-gray-800">
+                  Are you searching for the best online stock trading classes in Ghaziabad? Now you can learn
+                  professional trading skills from the comfort of your home. Our structured and practical online
+                  trading course in Ghaziabad is designed for students, working professionals, and aspiring traders
+                  who want flexible learning with expert guidance.
+                </p>
 
-            <p className="mt-8">
-              With the growing demand for online education, our virtual trading classes in Ghaziabad provide
-              live interactive sessions, real-time chart analysis, and step-by-step strategy training. You
-              don’t need to travel anywhere — just join the live class from your mobile or laptop and start
-              learning.
-            </p>
+                <p className="mt-8">
+                  With the growing demand for online education, our virtual trading classes in Ghaziabad provide
+                  live interactive sessions, real-time chart analysis, and step-by-step strategy training. You
+                  don&apos;t need to travel anywhere — just join the live class from your mobile or laptop and start
+                  learning.
+                </p>
 
-            <h2 className="text-2xl md:text-3xl font-bold text-black mt-10 mb-6">
-              What You Will Learn in Our Online Course:
-            </h2>
-            <ul className="space-y-4 list-none pl-0">
-              {[
-                "Basics of Stock Market (Beginner Friendly)",
-                "Technical Analysis & Chart Reading",
-                "Intraday & Swing Trading Strategies",
-                "Options & Futures Introduction",
-                "Risk & Money Management",
-                "Live Market Trading Demonstration",
-                "Investment Planning Basics",
-              ].map((item, index) => (
-                <li key={index} className="flex items-start gap-3">
-                  <span className="text-[#7ED321] text-xl">✔</span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
+                <h2 className="text-2xl md:text-3xl font-bold text-black mt-10 mb-6">
+                  What You Will Learn in Our Online Course:
+                </h2>
+                <ul className="space-y-4 list-none pl-0">
+                  {[
+                    "Basics of Stock Market (Beginner Friendly)",
+                    "Technical Analysis & Chart Reading",
+                    "Intraday & Swing Trading Strategies",
+                    "Options & Futures Introduction",
+                    "Risk & Money Management",
+                    "Live Market Trading Demonstration",
+                    "Investment Planning Basics",
+                  ].map((item, index) => (
+                    <li key={index} className="flex items-start gap-3">
+                      <span className="text-[#7ED321] text-xl">✔</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
 
-            <p className="mt-8">
-              Our experienced mentors conduct live sessions where you can ask questions and clear doubts
-              instantly. We focus on practical learning so you understand how real trading works, not just
-              theory. Recorded sessions are also provided for revision and practice.
-            </p>
+                <p className="mt-8">
+                  Our experienced mentors conduct live sessions where you can ask questions and clear doubts
+                  instantly. We focus on practical learning so you understand how real trading works, not just
+                  theory. Recorded sessions are also provided for revision and practice.
+                </p>
 
-            <p className="mt-6">
-              This online trading course in Ghaziabad is ideal for those who want flexible timings and
-              professional-level knowledge without attending offline classes. Whether your goal is part-time
-              income, active trading, or long-term investing, our virtual training helps you build confidence
-              and skills.
-            </p>
+                <p className="mt-6">
+                  This online trading course in Ghaziabad is ideal for those who want flexible timings and
+                  professional-level knowledge without attending offline classes. Whether your goal is part-time
+                  income, active trading, or long-term investing, our virtual training helps you build confidence
+                  and skills.
+                </p>
 
-            <h2 className="text-2xl md:text-3xl font-bold text-black mt-12 mb-6">
-              Why Choose Our Virtual Trading Classes?
-            </h2>
-            <ul className="grid sm:grid-cols-2 gap-4 list-none pl-0">
-              {[
-                "Live Interactive Sessions",
-                "Real-Time Market Practice",
-                "Beginner to Advanced Level Training",
-                "Personal Mentorship Support",
-                "Flexible Learning from Anywhere",
-              ].map((item, index) => (
-                <li
-                  key={index}
-                  className="flex items-center gap-3 bg-gray-50 p-4 rounded-lg border border-gray-100 hover:border-[#7ED321] transition"
-                >
-                  <span className="text-yellow-500 text-xl">⭐</span>
-                  <span className="font-semibold text-gray-800">{item}</span>
-                </li>
-              ))}
-            </ul>
+                <h2 className="text-2xl md:text-3xl font-bold text-black mt-12 mb-6">
+                  Why Choose Our Virtual Trading Classes?
+                </h2>
+                <ul className="grid sm:grid-cols-2 gap-4 list-none pl-0">
+                  {[
+                    "Live Interactive Sessions",
+                    "Real-Time Market Practice",
+                    "Beginner to Advanced Level Training",
+                    "Personal Mentorship Support",
+                    "Flexible Learning from Anywhere",
+                  ].map((item, index) => (
+                    <li
+                      key={index}
+                      className="flex items-center gap-3 bg-gray-50 p-4 rounded-lg border border-gray-100 hover:border-[#7ED321] transition"
+                    >
+                      <span className="text-yellow-500 text-xl">⭐</span>
+                      <span className="font-semibold text-gray-800">{item}</span>
+                    </li>
+                  ))}
+                </ul>
 
-            <div className="bg-[#f9f9f9] border-l-4 border-[#7ED321] p-6 mt-12 rounded-r-lg">
-              <p className="font-bold text-gray-900 mb-2">Learn From Home</p>
-              <p>
-                If you want to master trading with convenience and expert support, join our online stock
-                trading classes in Ghaziabad today.
-              </p>
-              <p className="mt-4 font-semibold text-[#7ED321]">
-                📞 Enroll now and start your journey toward becoming a confident trader from home.
-              </p>
+                <div className="bg-[#f9f9f9] border-l-4 border-[#7ED321] p-6 mt-12 rounded-r-lg">
+                  <p className="font-bold text-gray-900 mb-2">Learn From Home</p>
+                  <p>
+                    If you want to master trading with convenience and expert support, join our online stock
+                    trading classes in Ghaziabad today.
+                  </p>
+                  <p className="mt-4 font-semibold text-[#7ED321]">
+                    📞 Enroll now and start your journey toward becoming a confident trader from home.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Sidebar / Enquiry Form */}
+            <div className="lg:col-span-1">
+              <div className="sticky top-24">
+                <EnquiryForm />
+              </div>
             </div>
           </div>
         </div>
@@ -114,4 +127,3 @@ export default function OnlineStockTradingClassesGhaziabad() {
     </div>
   );
 }
-
