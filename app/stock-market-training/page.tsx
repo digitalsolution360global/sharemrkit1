@@ -61,6 +61,7 @@ export default function OnlineTraining() {
 
   return (
     <div className="bg-white text-black min-h-screen font-sans">
+
       {/* ================= HERO SECTION ================= */}
       <section className="relative pt-24 md:pt-32 pb-12 bg-[#111] overflow-hidden text-center md:text-left">
         <div className="absolute top-0 right-0 w-1/3 h-full bg-[#7ED321]/10 blur-[120px] rounded-full -mr-20 -mt-20 opacity-50" />
@@ -89,112 +90,54 @@ export default function OnlineTraining() {
       </section>
 
       {/* ================= MENTOR SECTION ================= */}
-      <section className="py-12 md:py-16 bg-black">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
+      <section className="py-8 md:py-14 bg-black">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6">
 
-            {/* Ashish Singh Card */}
-            <div className="bg-[#0c0c0c] border border-white/10 rounded-[2.5rem] p-8 md:p-10 shadow-2xl relative overflow-hidden group transition-all hover:border-[#7ED321]/30">
-              {/* TOP SECTION: IMAGE + MAIN DETAILS */}
-              <div className="flex flex-col md:flex-row gap-8 items-center md:items-start mb-8">
-                <div className="w-40 h-40 md:w-52 md:h-52 relative shrink-0">
-                  <div className="absolute inset-0 rounded-full border-4 border-[#7ED321]/20 group-hover:border-[#7ED321]/50 transition-all z-10" />
-                  <div className="w-full h-full rounded-full overflow-hidden border-4 border-black shadow-2xl relative">
-                    <Image src="/ashish.png" alt="Ashish Singh" fill className="object-cover object-top" />
-                  </div>
-                </div>
+          {/* Ashish Singh Card */}
+          <div className="bg-[#0c0c0c] border border-white/10 rounded-[2rem] p-5 md:p-8 shadow-2xl relative overflow-hidden group transition-all hover:border-[#7ED321]/30">
 
-                <div className="flex-1 text-center md:text-left">
-                  <h3 className="text-3xl font-bold text-white mb-1">Ashish Singh</h3>
-                  <p className="text-[#7ED321] text-sm font-bold tracking-widest uppercase">CERTIFIED TECHNICAL ANALYST | FULL-TIME TRADER</p>
-                  <p className="text-gray-500 italic text-sm mt-3 leading-relaxed">"I don't predict markets—I exploit edges."</p>
+            {/* TOP SECTION: IMAGE + MAIN DETAILS */}
+            <div className="flex flex-row gap-4 md:gap-8 items-center mb-5 md:mb-8">
+              <div className="w-20 h-20 md:w-36 md:h-36 relative shrink-0">
+                <div className="absolute inset-0 rounded-full border-2 md:border-4 border-[#7ED321]/20 group-hover:border-[#7ED321]/50 transition-all z-10" />
+                <div className="w-full h-full rounded-full overflow-hidden border-2 md:border-4 border-black shadow-2xl relative">
+                  <Image src="/ashish.png" alt="Ashish Singh" fill className="object-cover object-top" />
                 </div>
               </div>
 
-              {/* MIDDLE SECTION: FULL WIDTH SPECIALIZATION */}
-              <div className="mb-8 w-full">
-                <div className="space-y-3">
-                  <p className="font-bold text-[#7ED321] text-xs uppercase tracking-tighter flex items-center gap-1">🔥 MY SPECIALIZATION:</p>
-                  <p className="text-gray-300 text-sm flex items-start gap-2 leading-relaxed">✔ Option Selling Mastery – High-probability strategies to generateconsistent income 💰</p>
-                  <p className="text-gray-300 text-sm flex items-start gap-2 leading-relaxed">✔ Cash Equity Swing Trading – Capturing 5-15% moves in quality stocks 🏦</p>
-                </div>
-              </div>
-
-              {/* BOTTOM SECTION: WHY FOLLOW + CTA */}
-              <div className="pt-6 border-t border-white/10 w-full">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-3">
-                    <p className="font-bold text-white text-xs uppercase tracking-tighter mb-2">WHY FOLLOW ME?</p>
-                    <p className="text-gray-400 text-sm flex items-center gap-3">✅ 9+ Years of live market experience</p>
-                    <p className="text-gray-400 text-sm flex items-center gap-3">✅ Battle-tested strategies for bullish & bearish markets <span className="text-[#7ED321]">✅</span></p>
-                    <p className="text-xs text-gray-500 italic mt-2">Focus on risk management first, profits second</p>
-                  </div>
-                  <div className="space-y-4">
-                    <p className="text-[#7ED321] font-bold text-sm">📢 Let’s Build Your Trading Edge Together!</p>
-                    <div className="text-gray-400 text-[13px] space-y-1">
-                      <p>→ DM for mentorship</p>
-                      <p>→ Join my next masterclass</p>
-                    </div>
-                    <div className="mt-4 pt-4 border-t border-white/5 flex items-center gap-2 text-white font-bold text-sm">
-                      <span className="text-[#7ED321]">Connect Now:</span> +91 84601 88483
-                    </div>
-                  </div>
-                </div>
+              <div className="flex-1 text-left">
+                <h3 className="text-xl md:text-3xl font-bold text-white mb-1">Ashish Singh</h3>
+                <p className="text-[#7ED321] text-[10px] md:text-sm font-bold tracking-widest uppercase leading-tight">CERTIFIED TECHNICAL ANALYST | FULL-TIME TRADER</p>
+                <p className="text-gray-500 italic text-xs md:text-sm mt-2 leading-relaxed">&quot;I don&apos;t predict markets—I exploit edges.&quot;</p>
               </div>
             </div>
 
-            {/* Nikhil Singh Card */}
-            <div className="bg-[#0c0c0c] border border-white/10 rounded-[2.5rem] p-8 md:p-10 shadow-2xl relative overflow-hidden group transition-all hover:border-[#7ED321]/30">
-              {/* TOP SECTION: IMAGE + MAIN DETAILS */}
-              <div className="flex flex-col md:flex-row gap-8 items-center md:items-start mb-8">
-                <div className="w-40 h-40 md:w-52 md:h-52 relative shrink-0">
-                  <div className="absolute inset-0 rounded-full border-4 border-[#7ED321]/20 group-hover:border-[#7ED321]/50 transition-all z-10" />
-                  <div className="w-full h-full rounded-full overflow-hidden border-4 border-black shadow-2xl relative">
-                    <Image src="/nikhil.png" alt="Nikhil Singh" fill className="object-cover object-top" />
-                  </div>
-                </div>
-
-                <div className="flex-1 text-center md:text-left">
-                  <h3 className="text-3xl font-bold text-white mb-1">Nikhil Singh</h3>
-                  <p className="text-[#7ED321] text-sm font-bold tracking-widest uppercase">STOCK MARKET ANALYST | TRADING EXPERT</p>
-                  <p className="text-gray-500 italic text-sm mt-3 leading-relaxed">"Mastering high-probability breakout strategies."</p>
-                </div>
+            {/* MIDDLE SECTION: FULL WIDTH SPECIALIZATION */}
+            <div className="mb-4 md:mb-8 w-full">
+              <div className="space-y-2">
+                <p className="font-bold text-[#7ED321] text-xs uppercase tracking-tighter flex items-center gap-1">🔥 MY SPECIALIZATION:</p>
+                <p className="text-gray-300 text-xs md:text-sm flex items-start gap-2 leading-relaxed">✔ Option Selling Mastery – High-probability strategies to generate consistent income 💰</p>
+                <p className="text-gray-300 text-xs md:text-sm flex items-start gap-2 leading-relaxed">✔ Cash Equity Swing Trading – Capturing 5-15% moves in quality stocks 🏦</p>
               </div>
+            </div>
 
-              {/* MIDDLE SECTION: FULL WIDTH WHAT I EXCEL AT */}
-              <div className="mb-8 w-full">
-                <div className="space-y-4">
-                  <p className="font-bold text-[#7ED321] text-xs uppercase tracking-tighter flex items-center gap-1">📍 WHAT I EXCEL AT:</p>
-                  <div className="space-y-3">
-                    {[
-                      { t: "Pattern Analysis", d: "Mastering candlesticks & chart patterns for highprobability trades." },
-                      { t: "Trendline & Support/Resistance", d: "Spotting key levels for strategic entries & exits." },
-                      { t: "Breakout Trading", d: "Riding the momentum waves with precision & discipline." },
-                      { t: "Risk Management", d: "Because preserving capital is just as crucial as making profits!" }
-                    ].map((item, i) => (
-                      <div key={i} className="flex items-start gap-3">
-                        <CheckCircle2 size={16} className="text-[#7ED321] mt-0.5 shrink-0" />
-                        <p className="text-gray-300 text-sm leading-relaxed">
-                          <span className="font-bold text-white">{item.t}</span> – {item.d}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
+            {/* BOTTOM SECTION: WHY FOLLOW + CTA */}
+            <div className="pt-4 md:pt-6 border-t border-white/10 w-full">
+              <div className="grid grid-cols-2 gap-3 md:gap-6">
+                <div className="space-y-1 md:space-y-3">
+                  <p className="font-bold text-white text-xs uppercase tracking-tighter mb-1">WHY FOLLOW ME?</p>
+                  <p className="text-gray-400 text-xs md:text-sm flex items-start gap-2">✅ 9+ Years of live market experience</p>
+                  <p className="text-gray-400 text-xs md:text-sm flex items-start gap-2">✅ Battle-tested strategies for bullish &amp; bearish markets</p>
+                  <p className="text-[10px] text-gray-500 italic mt-1">Focus on risk management first, profits second</p>
                 </div>
-              </div>
-
-              {/* BOTTOM SECTION: CTA */}
-              <div className="pt-6 border-t border-white/10 w-full">
-                <div className="bg-white/5 p-6 rounded-2xl border border-white/5">
-                  <p className="text-[#7ED321] font-bold text-sm mb-3">📢 Let’s Build Your Trading Edge Together!</p>
-                  <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
-                    <div className="text-gray-400 text-[13px] space-y-1">
-                      <p>→ DM for mentorship</p>
-                      <p>→ Join my next masterclass</p>
-                    </div>
-                    <div className="flex items-center gap-2 text-white font-bold text-sm">
-                      <span className="text-[#7ED321]">Connect Now:</span> +91 99247 68290
-                    </div>
+                <div className="space-y-2 md:space-y-4">
+                  <p className="text-[#7ED321] font-bold text-xs md:text-sm">📢 Let&apos;s Build Your Trading Edge Together!</p>
+                  <div className="text-gray-400 text-xs space-y-1">
+                    <p>→ DM for mentorship</p>
+                    <p>→ Join my next masterclass</p>
+                  </div>
+                  <div className="pt-2 border-t border-white/5 flex items-center gap-1 text-white font-bold text-xs">
+                    <span className="text-[#7ED321]">Connect Now:</span> +91 84601 88483
                   </div>
                 </div>
               </div>
@@ -211,7 +154,7 @@ export default function OnlineTraining() {
             <div>
               <p className="text-[#7ED321] font-bold tracking-widest uppercase mb-4 text-sm">Why Choose Us?</p>
               <h2 className="text-3xl md:text-5xl font-bold mb-10 leading-tight">
-                We Don't Just Teach; <br />
+                We Don&apos;t Just Teach; <br />
                 <span className="text-[#7ED321]">We Mentor!</span>
               </h2>
 
@@ -309,12 +252,12 @@ export default function OnlineTraining() {
             </div>
 
             {/* Futures & Options */}
-            <div className="bg-whitep-4 md:p-5 rounded-[2rem] shadow-sm border border-gray-100 hover:shadow-xl transition-all">
+            <div className="bg-white p-4 md:p-5 rounded-[2rem] shadow-sm border border-gray-100 hover:shadow-xl transition-all">
               <div className="flex items-center gap-4 mb-6">
                 <div className="bg-[#7ED321] text-black w-10 h-10 rounded-xl flex items-center justify-center font-black text-xl shadow-lg shadow-[#7ED321]/30">3</div>
                 <div>
                   <h3 className="text-xl font-bold">Smart Trading!</h3>
-                  <p className="text-[10px] text-gray-400 font-bold uppercase tracking-wider">Futures & Options</p>
+                  <p className="text-[10px] text-gray-400 font-bold uppercase tracking-wider">Futures &amp; Options</p>
                 </div>
               </div>
               <ul className="space-y-2">
@@ -373,64 +316,6 @@ export default function OnlineTraining() {
         </div>
       </section>
 
-      {/* ================= COURSE DETAILS / PRICING ================= */}
-      {/* <section className="py-12 md:py-16 bg-gray-50 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-16">
-           
-            <div>
-              <h2 className="text-3xl md:text-5xl font-bold mb-10 leading-snug">Master the Share Market <br /> in <span className="text-[#7ED321]">Just 3 Months!</span></h2>
-              <div className="space-y-6">
-                {[
-                  { title: "3-Month Comprehensive Course", desc: "Weekly 3 Lectures (Mon - Wed - Fri)", icon: <Calendar size={28} /> },
-                  { title: "Flexible Batches", desc: "Morning: 9:30 AM - 10:30 AM | Evening: 6:30 PM - 7:30 PM", icon: <Clock size={28} /> },
-                  { title: "Online & Offline Options", desc: "Learn from anywhere or in person!", icon: <Smartphone size={28} /> }
-                ].map((item, i) => (
-                  <div key={i} className="bg-white p-6 rounded-[2rem] shadow-sm border border-gray-100 flex items-center gap-6 hover:shadow-md transition-shadow">
-                    <div className="bg-[#7ED321]/10 text-[#7ED321] p-3 rounded-xl">
-                      {item.icon}
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-lg text-gray-900">{item.title}</h4>
-                      <p className="text-gray-500 mt-1 text-sm font-medium">{item.desc}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-       
-            <div className="bg-[#0a0a0a] rounded-[3rem] p-10 md:p-14 text-white relative flex flex-col justify-center shadow-2xl overflow-hidden border border-white/5">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-[#7ED321]/10 rounded-full blur-[100px] -mr-32 -mt-32" />
-              <div className="relative z-10">
-                <p className="text-[#7ED321] font-bold tracking-[0.2em] uppercase text-center mb-10 text-xs">Course Fee Structure</p>
-                <div className="space-y-10 mb-12">
-                  <div className="text-center group">
-                    <div className="flex items-center justify-center gap-3 mb-2 translate-x-[-10px]">
-                      <IndianRupee className="text-[#7ED321]" size={36} />
-                      <span className="text-5xl md:text-6xl font-black group-hover:scale-110 transition-transform block">12,000/-</span>
-                    </div>
-                    <p className="text-gray-400 uppercase tracking-widest font-bold text-[10px]">Online Course Fee</p>
-                  </div>
-                  <div className="w-full h-px bg-white/10" />
-                  <div className="text-center opacity-70">
-                    <div className="flex items-center justify-center gap-2 mb-2">
-                      <IndianRupee className="text-white/40" size={28} />
-                      <span className="text-3xl md:text-4xl font-black text-white/80">15,000/-</span>
-                    </div>
-                    <p className="text-gray-600 uppercase tracking-widest font-bold text-[10px]">Offline Course Fee</p>
-                  </div>
-                </div>
-                <Link href="/contact" className="block w-full bg-[#7ED321] text-black py-5 rounded-2xl font-black text-xl text-center hover:scale-[1.02] transition-all shadow-[0_20px_50px_rgba(126,211,33,0.3)]">
-                  Enroll Now <ArrowRight className="inline-block ml-2" size={24} />
-                </Link>
-                <p className="mt-8 text-gray-500 text-[10px] text-center italic font-medium">✨ Limited seats available for each batch!</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
       {/* ================= FINAL CTA ================= */}
       <section className="py-12 md:py-16 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-black via-[#0a0a0a] to-zinc-900" />
@@ -457,6 +342,7 @@ export default function OnlineTraining() {
           </div>
         </div>
       </section>
+
     </div>
   );
 }

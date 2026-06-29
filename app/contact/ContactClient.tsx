@@ -30,12 +30,12 @@ export default function ContactClient() {
         </div>
       </section>
 
-      {/* ================= CONTACT INFO ================= */}
+      {/* ================= CONTACT INFO & FORM ================= */}
       <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10">
+        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-stretch justify-center">
 
           {/* Govindpuram */}
-          <div className="bg-gray-50 rounded-2xl p-8 shadow hover:shadow-xl transition">
+          <div className="w-full bg-gray-50 rounded-2xl p-8 shadow hover:shadow-xl transition flex flex-col justify-center">
             <h3 className="text-2xl font-bold mb-6 text-[#7ED321]">
               Govindpuram Center
             </h3>
@@ -61,7 +61,7 @@ export default function ContactClient() {
           </div>
 
           {/* Raj Nagar Extension */}
-          <div className="bg-gray-50 rounded-2xl p-8 shadow hover:shadow-xl transition">
+          {/* <div className="bg-gray-50 rounded-2xl p-8 shadow hover:shadow-xl transition">
             <h3 className="text-2xl font-bold mb-6 text-[#7ED321]">
               Raj Nagar Extension Center
             </h3>
@@ -82,84 +82,80 @@ export default function ContactClient() {
                 <span>407 AVS City Square, Raj Nagar Extension, Ghaziabad</span>
               </p>
             </div>
-          </div>
+          </div> */}
 
-        </div>
-      </section>
+          {/* ================= CONTACT FORM ================= */}
+          <div className="w-full">
+            <div className="bg-gray-200 rounded-2xl shadow-xl p-8 h-full flex flex-col justify-center">
+              <h2 className="text-3xl font-bold text-black mb-6 text-center">
+                Send Us a <span className="text-[#7ED321]">Message</span>
+              </h2>
 
-      {/* ================= CONTACT FORM ================= */}
-      <section className="pb-20 bg-white">
-        <div className="max-w-4xl mx-auto px-6">
+              <form
+                onSubmit={async (e: React.FormEvent<HTMLFormElement>) => {
+                  e.preventDefault();
 
-          <div className="bg-gray-200 rounded-2xl shadow-xl p-8">
-            <h2 className="text-3xl font-bold text-black mb-6 text-center">
-              Send Us a <span className="text-[#7ED321]">Message</span>
-            </h2>
+                  const form = e.currentTarget;
+                  const formData = new FormData(form);
 
-            <form
-              onSubmit={async (e: React.FormEvent<HTMLFormElement>) => {
-                e.preventDefault();
+                  const res = await fetch("/api/contact", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({
+                      name: formData.get("name"),
+                      email: formData.get("email"),
+                      phone: formData.get("phone"),
+                      message: formData.get("message"),
+                    }),
+                  });
 
-                const form = e.currentTarget;
-                const formData = new FormData(form);
-
-                const res = await fetch("/api/contact", {
-                  method: "POST",
-                  headers: { "Content-Type": "application/json" },
-                  body: JSON.stringify({
-                    name: formData.get("name"),
-                    email: formData.get("email"),
-                    phone: formData.get("phone"),
-                    message: formData.get("message"),
-                  }),
-                });
-
-                if (res.ok) {
-                  alert("Thank you! Your message has been sent.");
-                  form.reset();
-                } else {
-                  alert("Something went wrong. Please try again.");
-                }
-              }}
-              className="grid gap-5"
-            >
-              <input
-                name="name"
-                required
-                placeholder="Full Name"
-                className="w-full text-black border border-black rounded-lg px-4 py-3 bg-white focus:outline-none focus:ring-0 focus:border-black"
-              />
-
-              <input
-                name="email"
-                type="email"
-                required
-                placeholder="Email Address"
-                className="w-full text-black border border-black rounded-lg px-4 py-3 bg-white focus:outline-none focus:ring-0 focus:border-black"
-              />
-
-              <input
-                name="phone"
-                required
-                placeholder="Phone Number"
-                className="w-full text-black border border-black rounded-lg px-4 py-3 bg-white focus:outline-none focus:ring-0 focus:border-black"
-              />
-
-              <textarea
-                name="message"
-                rows={4}
-                required
-                placeholder="Your Message"
-                className="w-full text-black border border-black rounded-lg px-4 py-3 bg-white focus:outline-none focus:ring-0 focus:border-black"
-              />
-
-              <button
-                type="submit"
-                className="bg-[#7ED321] hover:bg-[#6abc1e] text-white font-semibold py-3 rounded-lg transition"
+                  if (res.ok) {
+                    alert("Thank you! Your message has been sent.");
+                    form.reset();
+                  } else {
+                    alert("Something went wrong. Please try again.");
+                  }
+                }}
+                className="grid gap-5"
               >
-                Submit Message
-              </button>
-            </form>
+                <input
+                  name="name"
+                  required
+                  placeholder="Full Name"
+                  className="w-full text-black border border-black rounded-lg px-4 py-3 bg-white focus:outline-none focus:ring-0 focus:border-black"
+                />
+
+                <input
+                  name="email"
+                  type="email"
+                  required
+                  placeholder="Email Address"
+                  className="w-full text-black border border-black rounded-lg px-4 py-3 bg-white focus:outline-none focus:ring-0 focus:border-black"
+                />
+
+                <input
+                  name="phone"
+                  required
+                  placeholder="Phone Number"
+                  className="w-full text-black border border-black rounded-lg px-4 py-3 bg-white focus:outline-none focus:ring-0 focus:border-black"
+                />
+
+                <textarea
+                  name="message"
+                  rows={4}
+                  required
+                  placeholder="Your Message"
+                  className="w-full text-black border border-black rounded-lg px-4 py-3 bg-white focus:outline-none focus:ring-0 focus:border-black"
+                />
+
+                <button
+                  type="submit"
+                  className="bg-[#7ED321] hover:bg-[#6abc1e] text-white font-semibold py-3 rounded-lg transition"
+                >
+                  Submit Message
+                </button>
+              </form>
+            </div>
           </div>
 
         </div>
@@ -167,7 +163,7 @@ export default function ContactClient() {
 
       {/* ================= MAPS ================= */}
       <section className="pb-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-7xl m-auto px-6">
           <div className="flex flex-col md:flex-row gap-6">
 
             <div className="flex-1 rounded-2xl overflow-hidden shadow-lg min-h-[350px]">
@@ -178,13 +174,13 @@ export default function ContactClient() {
               />
             </div>
 
-            <div className="flex-1 rounded-2xl overflow-hidden shadow-lg min-h-[350px]">
+            {/* <div className="flex-1 rounded-2xl overflow-hidden shadow-lg min-h-[350px]">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.5458692394195!2d77.42848737443835!3d28.703228375626274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf1d008cc1187%3A0x721e2f4a909a3d38!2sShareMarket%20Skills%20Academy%20-%20Raj%20Nagar%20Extension!5e0!3m2!1sen!2sin!4v1775797567803!5m2!1sen!2sin"
                 className="w-full h-full"
                 loading="lazy"
               />
-            </div>
+            </div> */}
 
           </div>
         </div>

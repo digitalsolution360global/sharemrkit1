@@ -93,8 +93,8 @@ export default function CryptoTradingCourse() {
 
       {/* ================= MENTOR SECTION ================= */}
       <section className="py-12 md:py-16 bg-black">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
+        <div className="max-w-2xl mx-auto flex justify-center px-6">
+          <div className="lg:gap-12">
 
             {/* Crypto Mentor Name 1 Card */}
             <div className="bg-[#0c0c0c] border border-white/10 rounded-[2.5rem] p-8 md:p-10 shadow-2xl relative overflow-hidden group transition-all hover:border-[#7ED321]/30">
@@ -148,8 +148,8 @@ export default function CryptoTradingCourse() {
             </div>
 
             {/* Crypto Mentor Name 2 Card */}
-            <div className="bg-[#0c0c0c] border border-white/10 rounded-[2.5rem] p-8 md:p-10 shadow-2xl relative overflow-hidden group transition-all hover:border-[#7ED321]/30">
-              {/* TOP SECTION: IMAGE + MAIN DETAILS */}
+            {/* <div className="bg-[#0c0c0c] border border-white/10 rounded-[2.5rem] p-8 md:p-10 shadow-2xl relative overflow-hidden group transition-all hover:border-[#7ED321]/30">
+              
               <div className="flex flex-col md:flex-row gap-8 items-center md:items-start mb-8">
                 <div className="w-40 h-40 md:w-52 md:h-52 relative shrink-0">
                   <div className="absolute inset-0 rounded-full border-4 border-[#7ED321]/20 group-hover:border-[#7ED321]/50 transition-all z-10" />
@@ -165,7 +165,7 @@ export default function CryptoTradingCourse() {
                 </div>
               </div>
 
-              {/* MIDDLE SECTION: FULL WIDTH WHAT I EXCEL AT */}
+              
               <div className="mb-8 w-full">
                 <div className="space-y-4">
                   <p className="font-bold text-[#7ED321] text-xs uppercase tracking-tighter flex items-center gap-1">📍 WHAT I EXCEL AT:</p>
@@ -187,7 +187,7 @@ export default function CryptoTradingCourse() {
                 </div>
               </div>
 
-              {/* BOTTOM SECTION: WHY FOLLOW + CTA */}
+          
               <div className="pt-6 border-t border-white/10 w-full">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-3">
@@ -208,7 +208,7 @@ export default function CryptoTradingCourse() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
 
           </div>
         </div>
