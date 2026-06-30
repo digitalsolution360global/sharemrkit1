@@ -47,11 +47,11 @@ export default function IntradayTradingCourseGhaziabad() {
                 </p>
 
                 <p>
-                  That&apos;s how they can take the right path and avoid capital loss. At Share Market Skills Academy, you can attain financial freedom with a structured roadmap. As a premium intraday trading course ghaziabad, our professionals help traders to lead the best path toward systematic execution.
+                  That&apos;s how they can take the right path and avoid capital loss. At Share Market Skills Academy, you can attain financial freedom with a structured roadmap. As a premium <Link href="/stock-market-training" className="text-blue-600 hover:underline">intraday trading course ghaziabad</Link>, our professionals help traders to lead the best path toward systematic execution.
                 </p>
 
                 <p>
-                  Get complete training about the quick momentum shifts, technical chart reading, and strict psychological boundaries – Join our class today!
+                  Get complete training about the quick momentum shifts, technical chart reading, and strict psychological boundaries – <Link href="/contact" className="text-blue-600 hover:underline">Join our class today!</Link>
                 </p>
 
                 <h2 className="text-2xl md:text-3xl font-bold text-black mt-10 mb-4">
@@ -67,7 +67,7 @@ export default function IntradayTradingCourseGhaziabad() {
                 </p>
 
                 <p>
-                  We come up with the finest and most structured framework, and students can understand everything related to the Share Market Skills Academy Intraday:
+                  We come up with the finest and most structured framework, and students can understand everything related to the <Link href="/" className="text-blue-600 hover:underline">Share Market Skills Academy Intraday</Link>:
                 </p>
 
                 <ul className="space-y-3 list-none pl-0">
