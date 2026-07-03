@@ -42,7 +42,7 @@ export default function ShareMarketSkillsAcademy() {
             <div className="lg:col-span-2">
               <div className="prose max-w-none text-gray-700 leading-relaxed text-lg space-y-8">
                 <h2 className="text-2xl md:text-3xl font-bold text-black mt-10 mb-6">
-                  Introduction: Master the Markets Legally and Strategically
+                  Master the Markets Legally and Strategically
                 </h2>
 
                 <p className="font-medium text-xl text-gray-800">
@@ -53,12 +53,12 @@ export default function ShareMarketSkillsAcademy() {
                 </p>
 
                 <p className="font-medium text-xl text-gray-800 mt-4">
-                  Well, that’s what you are about to learn at Share Market Skills Academy. Here, we give you proven and updated tips to learn a formal <Link href="/stock-market-training" className="underline">stock market education India</Link> style.
+                  Well, that’s what you are about to learn at Share Market Skills Academy. Here, we give you proven and updated tips to learn a formal <Link href="/stock-market-training" className="underline text-blue-600">stock market education India</Link> style.
                 </p>
 
                 <p className="mt-4">
                   Let’s learn the combo of strong data analysis with structured risk
-                  management tools – <Link href="/contact" className="underline">Book your service now</Link>!
+                  management tools – <Link href="/contact" className="underline text-blue-600">Book your service now</Link>!
                 </p>
 
                 <h2 className="text-2xl md:text-3xl font-bold text-black mt-12 mb-6">
@@ -90,7 +90,7 @@ export default function ShareMarketSkillsAcademy() {
                 </h2>
 
                 <p>
-                  India’s equity ecosystem revolves heavily around NSE BSE trading basics. Every beginner needs a unified, comprehensive map of the share market guide India. That’s why we let them create a Demat account to store securities electronically and a trading account to execute market orders.   
+                  India’s equity ecosystem revolves heavily around NSE BSE trading basics. Every beginner needs a unified, comprehensive map of the share market guide India. That’s why we let them create a Demat account to store securities electronically and a trading account to execute market orders.
                 </p>
 
                 <h2 className="text-2xl md:text-3xl font-bold text-black mt-12 mb-6">
@@ -133,7 +133,7 @@ export default function ShareMarketSkillsAcademy() {
                 </h2>
 
                 <p>
-                  With <Link href="/" className="underline">Share Market Skills Academy</Link>, you can confidently build a
+                  With <Link href="/" className="underline hover:underline  underline-offset-4 text-blue-600">Share Market Skills Academy</Link>, you can confidently build a
                   well-diversified portfolio tailored to your unique financial
                   goals. Our experts let you master the market fundamentals and
                   give you the confidence you need the most.

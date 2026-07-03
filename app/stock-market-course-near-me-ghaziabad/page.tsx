@@ -62,7 +62,7 @@ export default function StockMarketCourseNearMeGhaziabad() {
                   There is no way a person can become a pro in the world of the stock market without continuous learning and implementation of unique strategies. However, these skills won’t appear just randomly. It requires patience and quality education in the share market.
                 </p>
                 <p className="mb-6">
-                  That’s why you need someone who can give you the expert guidance in your journey of becoming one of the finest traders in India. For now, it is in Ghaziabad. Ghaziabad has become a hub for traders. The <Link href="/" className="text-blue-600 font-bold hover:underline decoration-2 underline-offset-4">Share Market Skills Academy</Link> runs the <strong>best stock market course near me in ghaziabad</strong>.
+                  That’s why you need someone who can give you the expert guidance in your journey of becoming one of the finest traders in India. For now, it is in Ghaziabad. Ghaziabad has become a hub for traders. The <Link href="/" className="text-blue-600 hover:underline underline-offset-4">Share Market Skills Academy</Link> runs the <strong>best stock market course near me in ghaziabad</strong>.
                 </p>
                 <p className="bg-gray-50 border-l-4 border-[#7ED321] p-6 italic rounded-r-xl text-gray-700 font-medium my-10">
                   "Stop scrolling while searching “stock market course near me ghaziabad” – start investing in the skills that actually generate wealth."

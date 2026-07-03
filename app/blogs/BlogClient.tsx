@@ -263,7 +263,7 @@ export default function BlogClient() {
                 <div>
                   <div className="flex flex-wrap gap-2 mb-3">
                     {blog.category.slice(0, 2).map((cat, i) => (
-                      <span key={i} className="text-[10px] font-bold tracking-wider text-[#7ED321] uppercase bg-[#7ED321]/10 px-2 py-1 rounded-sm">
+                      <span key={i} className="text-[10px] font-bold tracking-wider text-[#7ED321] uppercase bg-[#7ED321]/10 px-1 py-1 rounded-sm">
                         {cat}
                       </span>
                     ))}
