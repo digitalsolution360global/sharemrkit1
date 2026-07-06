@@ -53,7 +53,7 @@ export default function ShareMarketSkillsAcademy() {
                 </p>
 
                 <p className="font-medium text-xl text-gray-800 mt-4">
-                  Well, that’s what you are about to learn at Share Market Skills Academy. Here, we give you proven and updated tips to learn a formal <Link href="/stock-market-training" className="underline text-blue-600">stock market education India</Link> style.
+                  Well, that’s what you are about to learn at Share Market Skills Academy. Here, we give you proven and updated tips to learn a formal <Link href="/stock-market-training" className="underline text-blue-600 hover:text-blue-800">stock market education India</Link> style.
                 </p>
 
                 <p className="mt-4">
