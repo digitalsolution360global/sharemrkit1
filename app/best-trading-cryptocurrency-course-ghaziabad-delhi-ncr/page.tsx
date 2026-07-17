@@ -48,7 +48,7 @@ export default function CryptocurrencyCourseGhaziabad() {
                 </p>
                 <p className="font-medium text-xl text-gray-800 mt-4">
                   If you want to safely navigate this space, you need structural
-                  knowledge, not random social media tips. At <Link href="/" className="underline">Share Market Skills Academy</Link>, we build strategic
+                  knowledge, not random social media tips. At <Link href="/" className="underline text-blue-600 hover:text-blue-800">Share Market Skills Academy</Link>, we build strategic
                   markets for participants. The training is about to give you a proper insight and a thorough
                   understanding of exactly how to manage risk and protect capital.
                 </p>
@@ -57,7 +57,7 @@ export default function CryptocurrencyCourseGhaziabad() {
                   Why Choose a Cryptocurrency Course in Ghaziabad for Beginners?
                 </h2>
                 <p className="mt-4">
-                  A proper <Link href="/crypto-trading-course" className="underline">cryptocurrency course in Ghaziabad for beginners</Link> is something that sets things apart
+                  A proper <Link href="/crypto-trading-course" className="underline text-blue-600 hover:text-blue-800">cryptocurrency course in Ghaziabad for beginners</Link> is something that sets things apart
                   for a newcomer. This program from our center can change the scenario for the newcomers.
                   That’s how you can learn to securely set up cold and hot wallets and how to analyze complex
                   market cycles.
@@ -178,7 +178,7 @@ export default function CryptocurrencyCourseGhaziabad() {
                 <div className="bg-[#f9f9f9] border-l-4 border-[#7ED321] p-6 mt-12 rounded-r-lg">
                   <p className="font-bold text-gray-900 mb-2">Start Your Crypto Journey Today</p>
                   <p>
-                    For more info about our Cryptocurrency course in Ghaziabad for beginners – <Link href="/contact" className="underline">give us a call
+                    For more info about our Cryptocurrency course in Ghaziabad for beginners – <Link href="/contact" className="underline text-blue-600 hover:text-blue-800">give us a call
                     now</Link>!
                   </p>
                   <p className="mt-4 font-semibold text-[#7ED321]">
