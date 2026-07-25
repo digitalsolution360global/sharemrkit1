@@ -1,15 +1,24 @@
-"use client";
-
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import EnquiryForm from "@/components/layouts/EnquiryForm";
+import FAQSection from "./FAQSection";
+
+// ================= META TAGS =================
+export const metadata = {
+  title: "Stock Market Course After 12th Ghaziabad | Skill Academy",
+  description:
+    "Join the best stock market course after 12th Ghaziabad. Master live trading, technical analysis, and build a rewarding career with expert mentors.",
+  alternates: {
+    canonical: "/stock-market-course-after-12th-ghaziabad",
+  },
+};
 
 export default function StockMarketCourseAfter12thGhaziabad() {
   return (
     <div className="bg-white text-black">
       {/* ================= BANNER ================= */}
       <section
-        className="relative h-[40vh] md:h-[50vh] flex items-center bg-cover bg-center"
+        className="relative min-h-[50vh] pt-20 flex items-center bg-cover bg-center"
         style={{ backgroundImage: "url('/banner/b1.jpg')" }}
       >
         <div className="absolute inset-0 bg-black/70" />
@@ -21,8 +30,9 @@ export default function StockMarketCourseAfter12thGhaziabad() {
             <ArrowLeft size={16} /> Back to Blogs
           </Link>
           <h1 className="text-3xl md:text-5xl font-bold leading-tight">
-            Stock Market Course After 12th in <span className="text-[#7ED321]">Ghaziabad</span> <br />
-            Start Your Trading Career Early
+            Why Enrolling in a Stock Market Course After 12th{" "}
+            <span className="text-[#7ED321]">Ghaziabad</span> <br />
+            is the Ultimate Career Move
           </h1>
         </div>
       </section>
@@ -34,81 +44,137 @@ export default function StockMarketCourseAfter12thGhaziabad() {
             {/* Main Content */}
             <div className="lg:col-span-2">
               <div className="prose max-w-none text-gray-700 leading-relaxed text-lg space-y-8">
-                <p className="font-medium text-xl text-gray-800">
-                  Have you completed your 12th and looking for a career-oriented course? Our professional stock
-                  market course after 12th in Ghaziabad is specially designed for students who want to start
-                  building financial skills and explore career opportunities in the trading and investment field.
+
+                {/* Intro */}
+                <p className="text-gray-700 leading-relaxed">
+                  A high school student can take care of his or her own expenses through simple trading. From the
+                  beginning, you need support from a skill-focused academy. Entering the financial sector through a{" "}
+                  <span className="font-bold text-black">stock market course after 12th Ghaziabad</span> is the best
+                  decision for a youngster. With a certified trainer, you can get an early advantage in dynamic wealth
+                  management, trading, and equity analysis roles.
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  Welcome to <span className="font-bold text-black">Share Market Skills Academy</span>, where we teach
+                  young talents about the technical and intensive parts of the share market. Also, our professionals
+                  explore fundamental evaluation and live execution tactics tailored for beginners.
                 </p>
 
-                <p className="mt-8">
-                  Instead of waiting for traditional job options, students can now learn stock market trading and
-                  investment strategies at an early stage. Our structured trading course after 12th in Ghaziabad
-                  helps students understand financial markets from basics to advanced level with practical training.
-                </p>
-
-                <h2 className="text-2xl md:text-3xl font-bold text-black mt-10 mb-6">
-                  What You Will Learn:
+                {/* Section 1 */}
+                <h2 className="text-2xl md:text-3xl font-bold text-black mt-10 mb-4">
+                  Why Choose a Stock Market Course After 12th Ghaziabad?
                 </h2>
-                <ul className="space-y-4 list-none pl-0">
+                <p className="text-gray-700 leading-relaxed">
+                  Students should join the right{" "}
+                  <span className="font-bold text-black">stock market course after 12th Ghaziabad</span>. This is how
+                  they can evolve with the current and upcoming market trends. With our institute&apos;s guidance, we
+                  develop financial literacy and market competency right after school.
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  Apart from your degree, students gain practical expertise in candlestick charting, risk management, and
+                  market liquidity. Choosing a{" "}
+                  <span className="font-bold text-black">Share Market Skills Academy Career Session</span> for young
+                  talents can be useful. Our institute:
+                </p>
+                <ul className="space-y-3 list-none pl-0">
                   {[
-                    "Basics of Stock Market & Financial Markets",
-                    "How to Open and Use a Demat Account",
-                    "Basic Terminologies (Shares, IPO, Index, etc.)",
-                    "Understanding Market Trends",
-                    "Basics of Technical Analysis",
-                    "Introduction to Intraday & Swing Trading",
-                    "Risk & Money Management",
-                    "Basic Investment Planning",
+                    "Provides localized classroom access",
+                    "Builds psychological discipline",
+                    "Develops critical analytical thinking",
+                    "Hands-on exposure to NSE, BSE, capital markets, and derivative segments",
                   ].map((item, index) => (
                     <li key={index} className="flex items-start gap-3">
-                      <span className="text-[#7ED321] text-xl">✔</span>
+                      <span className="text-[#7ED321] text-xl mt-1">✔</span>
                       <span>{item}</span>
                     </li>
                   ))}
                 </ul>
-
-                <p className="mt-8">
-                  This share market career course in Ghaziabad focuses on skill development and real market exposure
-                  so that students gain confidence in analyzing and trading stocks. We explain concepts in simple
-                  language, making it easy for beginners to understand.
+                <p className="text-gray-700 leading-relaxed">
+                  Want to learn more about settling things based on a{" "}
+                  <span className="font-bold text-black">trading course after 12th Ghaziabad</span>? Take the first
+                  step with us to learn more!
                 </p>
 
-                <p className="mt-6">
-                  The course is ideal for students who want to build an additional income source, start part-time
-                  trading, develop a career in financial markets, or improve financial knowledge at an early age.
-                </p>
-
-                <h2 className="text-2xl md:text-3xl font-bold text-black mt-12 mb-6">
-                  Why Choose Our Course After 12th?
+                {/* Section 2 */}
+                <h2 className="text-2xl md:text-3xl font-bold text-black mt-10 mb-4">
+                  Get The Answer to the Qn – &quot;How to Start Stock Market After 12th in Ghaziabad?&quot;
                 </h2>
-                <ul className="grid sm:grid-cols-2 gap-4 list-none pl-0">
+                <p className="text-gray-700 leading-relaxed">
+                  It is important to know{" "}
+                  <span className="font-bold text-black">how to start stock market after 12th in Ghaziabad</span>,
+                  right from the basic to advanced level. For your information, we can say that students can easily
+                  begin with the given steps:
+                </p>
+                <ul className="space-y-3 list-none pl-0">
                   {[
-                    "Beginner-Friendly Teaching Method",
-                    "Practical Live Market Training",
-                    "Step-by-Step Learning Approach",
-                    "Personal Mentorship Support",
-                    "Affordable Fees for Students",
+                    "Mastering financial terms",
+                    "Understanding price action",
+                    "Opening practice Demat accounts",
                   ].map((item, index) => (
-                    <li
-                      key={index}
-                      className="flex items-center gap-3 bg-gray-50 p-4 rounded-lg border border-gray-100 hover:border-[#7ED321] transition"
-                    >
-                      <span className="text-yellow-500 text-xl">⭐</span>
-                      <span className="font-semibold text-gray-800">{item}</span>
+                    <li key={index} className="flex items-start gap-3">
+                      <span className="text-[#7ED321] text-xl mt-1">✔</span>
+                      <span>{item}</span>
                     </li>
                   ))}
                 </ul>
+                <p className="text-gray-700 leading-relaxed">
+                  Enrolling in a{" "}
+                  <span className="font-bold text-black">share market career course Ghaziabad</span> equips students
+                  for diverse roles. With specialized{" "}
+                  <span className="font-bold text-black">stock market classes for students</span>, it is opening doors
+                  to wealth advisory and financial technology firms for young learners and fresh high-school passouts.
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  Let&apos;s understand what we teach youngsters in our{" "}
+                  <span className="font-bold text-black">share market career course Ghaziabad</span>:
+                </p>
+                <ul className="space-y-3 list-none pl-0">
+                  {[
+                    "Focus on systematic technical and fundamental education",
+                    "Protect trading capital from heavy drawdowns",
+                    "Practice risk-free strategy testing",
+                    "Master basic price action, support-resistance levels, and chart patterns",
+                  ].map((item, index) => (
+                    <li key={index} className="flex items-start gap-3">
+                      <span className="text-[#7ED321] text-xl mt-1">✔</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="text-gray-700 leading-relaxed">
+                  Time to get your 1-on-1 mentor guidance at{" "}
+                  <Link
+                    href="https://www.sharemarketskills.in/contact"
+                    className="text-blue-600 hover:text-blue-800 underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Share Market Skills Academy Career training modules
+                  </Link>{" "}
+                  – join us today!
+                </p>
 
+                {/* Conclusion */}
                 <div className="bg-[#f9f9f9] border-l-4 border-[#7ED321] p-6 mt-12 rounded-r-lg">
-                  <p className="font-bold text-gray-900 mb-2">Start Early, Grow Faster</p>
-                  <p>
-                    If you want to start your financial journey early and explore opportunities in the stock market,
-                    join our stock market course after 12th in Ghaziabad today.
+                  <p className="font-bold text-gray-900 mb-2 text-xl">Conclusion</p>
+                  <p className="text-gray-700 leading-relaxed">
+                    A <span className="font-bold text-black">trading career after 12th Ghaziabad</span> isn&apos;t
+                    hard to get. Share Market Skills Academy ensures access to industry-experienced mentors. That&apos;s
+                    how young researchers can learn trading with live market steps and career setup.
                   </p>
                   <p className="mt-4 font-semibold text-[#7ED321]">
-                    📞 Enroll now and take your first step toward building a strong career in trading and investments.
+                    Build a lucrative trading career after 12th Ghaziabad by securing your desk at Share Market Skills
+                    Academy now –{" "}
+                    <Link
+                      href="https://www.sharemarketskills.in/contact"
+                      className="underline hover:opacity-80"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Contact us today!
+                    </Link>
                   </p>
                 </div>
+
               </div>
             </div>
 
@@ -121,6 +187,9 @@ export default function StockMarketCourseAfter12thGhaziabad() {
           </div>
         </div>
       </section>
+
+      {/* ================= FAQ SECTION ================= */}
+      <FAQSection />
     </div>
   );
 }
