@@ -49,12 +49,13 @@ export default function StockMarketCourseAfter12thGhaziabad() {
                 <p className="text-gray-700 leading-relaxed">
                   A high school student can take care of his or her own expenses through simple trading. From the
                   beginning, you need support from a skill-focused academy. Entering the financial sector through a{" "}
-                  <span className="font-bold text-black">stock market course after 12th Ghaziabad</span> is the best
+                  <Link href="https://www.sharemarketskills.in/stock-market-training" target="_blank" rel="noopener noreferrer" className=" text-blue-600 underline">stock market course after 12th Ghaziabad</Link> is the best
                   decision for a youngster. With a certified trainer, you can get an early advantage in dynamic wealth
                   management, trading, and equity analysis roles.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Welcome to <span className="font-bold text-black">Share Market Skills Academy</span>, where we teach
+                  Welcome to{" "}
+                  Share Market Skills Academy Career, where we teach
                   young talents about the technical and intensive parts of the share market. Also, our professionals
                   explore fundamental evaluation and live execution tactics tailored for beginners.
                 </p>
@@ -72,7 +73,7 @@ export default function StockMarketCourseAfter12thGhaziabad() {
                 <p className="text-gray-700 leading-relaxed">
                   Apart from your degree, students gain practical expertise in candlestick charting, risk management, and
                   market liquidity. Choosing a{" "}
-                  <span className="font-bold text-black">Share Market Skills Academy Career Session</span> for young
+                  <Link href="https://www.sharemarketskills.in/" target="_blank" rel="noopener noreferrer" className=" text-blue-600 underline">Share Market Skills Academy Career</Link> for young
                   talents can be useful. Our institute:
                 </p>
                 <ul className="space-y-3 list-none pl-0">
@@ -141,15 +142,10 @@ export default function StockMarketCourseAfter12thGhaziabad() {
                   ))}
                 </ul>
                 <p className="text-gray-700 leading-relaxed">
-                  Time to get your 1-on-1 mentor guidance at{" "}
-                  <Link
-                    href="https://www.sharemarketskills.in/contact"
-                    className="text-blue-600 hover:text-blue-800 underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Share Market Skills Academy Career training modules
-                  </Link>{" "}
+                  Time to get your 1-on-1 mentor guidance at
+
+                  Share Market Skills Academy Career training modules
+
                   – join us today!
                 </p>
 
@@ -158,19 +154,19 @@ export default function StockMarketCourseAfter12thGhaziabad() {
                   <p className="font-bold text-gray-900 mb-2 text-xl">Conclusion</p>
                   <p className="text-gray-700 leading-relaxed">
                     A <span className="font-bold text-black">trading career after 12th Ghaziabad</span> isn&apos;t
-                    hard to get. Share Market Skills Academy ensures access to industry-experienced mentors. That&apos;s
+                    hard to get.  <span className="font-bold text-black">Share Market Skills Academy</span>  ensures access to industry-experienced mentors. That&apos;s
                     how young researchers can learn trading with live market steps and career setup.
                   </p>
-                  <p className="mt-4 font-semibold text-[#7ED321]">
+                  <p className="mt-4 text-[#7ED321]">
                     Build a lucrative trading career after 12th Ghaziabad by securing your desk at Share Market Skills
                     Academy now –{" "}
                     <Link
                       href="https://www.sharemarketskills.in/contact"
-                      className="underline hover:opacity-80"
+                      className="text-blue-600 underline hover:opacity-80"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Contact us today!
+                      Contact us today
                     </Link>
                   </p>
                 </div>
